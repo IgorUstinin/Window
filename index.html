@@ -1,0 +1,2759 @@
+<!DOCTYPE html>
+	<html lang="en" >
+	<head>
+                <meta name="yandex-verification" content="962719801087b1d1" />
+		<meta charset="UTF-8" />
+		<title>PESWay</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<link rel="shortcut icon" href='http://pesway.pes6.ru/favicon.ico' />
+
+		<link rel="image_src" href='http://pesway.pes6.ru/public/style_images/dash/meta_image.png' />
+		<script type='text/javascript'>
+		//<![CDATA[
+			jsDebug			= 0; /* Must come before JS includes */
+			DISABLE_AJAX	= parseInt(0); /* Disables ajax requests where text is sent to the DB; helpful for charset issues */
+			inACP			= false;
+			var isRTL		= false;
+			var rtlIe		= '';
+			var rtlFull		= '';
+		//]]>
+		</script>
+		
+	
+				
+	
+
+				
+	
+
+				
+	
+
+				
+	
+
+				
+	
+
+				
+	
+
+				
+	
+	
+		<link rel="stylesheet" type="text/css" media='screen,print' href="http://pesway.pes6.ru/public/min/index.php?ipbv=8e606a4ce8614ada3164384324b87ae1&amp;f=public/style_css/css_24/ipb_help.css,public/style_css/css_24/ipb_mlist_addon.css,public/style_css/css_24/jawards.css,public/style_css/css_24/ipb_common.css,public/style_css/css_24/ipb_styles.css,public/style_css/css_24/calendar_select.css,public/style_css/css_24/ipshoutbox.css" />
+	
+
+<!--[if lte IE 7]>
+	<link rel="stylesheet" type="text/css" title='Main' media="screen" href="http://pesway.pes6.ru/public/style_css/css_24/ipb_ie.css" />
+<![endif]-->
+<!--[if lte IE 8]>
+	<style type='text/css'>
+		.ipb_table { table-layout: fixed; }
+		.ipsLayout_content { width: 99.5%; }
+	</style>
+<![endif]-->
+
+	<style type='text/css'>
+		img.bbc_img { max-width: 100% !important; }
+	</style>
+
+		<meta property="og:title" content="PESWay"/>
+		<meta property="og:site_name" content="PESWay"/>
+		<meta property="og:type" content="article" />
+		
+	
+		
+		
+			<meta name="description" content="Играть в PES 6 Online еще никогда не было так просто!" />
+		
+		
+		
+			<meta property="og:description" content="Играть в PES 6 Online еще никогда не было так просто!" />
+		
+		
+	
+
+		
+		
+			<meta name="keywords" content="pesway, pes6online, pes 6 online, pes6 online, pes6-online, песвей, песвэй, пес6 онлайн, пес6онлайн, пес6-онлайн, пес 6 онлайн" />
+		
+		
+		
+		
+	
+
+		
+		
+			<meta name="identifier-url" content="http://pesway.pes6.ru/" />
+		
+		
+			<meta property="og:url" content="http://pesway.pes6.ru/" />
+		
+		
+		
+	
+
+<meta property="og:image" content="http://pesway.pes6.ru/public/style_images/dash/meta_image.png"/>
+		
+		
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<script type='text/javascript'>!window.jQuery && document.write('<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"><\/script>')</script>
+		<script type='text/javascript'>!window.jQuery && document.write('<script src="http://pesway.pes6.ru/public/style_images/dash/js/jquery.min.js"><\/script>')</script>
+		<script type='text/javascript' src="http://pesway.pes6.ru/public/style_images/dash/js/cookie.js"></script>
+		<script type='text/javascript' src="http://pesway.pes6.ru/public/style_images/dash/js/ipbforumskins.js"></script>
+		<script type="text/javascript">
+		jQuery.noConflict();
+
+		jQuery(document).ready(function($){
+
+			var customBackground = 'body, .noBackgroundBlur .col_c_icon img, .noBackgroundBlur .maintitle';
+			var blurElements = '.backgroundBlur #userBar, .backgroundBlur #shadowWrap, .backgroundBlur .col_c_icon img, .backgroundBlur .maintitle, .backgroundBlur #footer_utilities, .backgroundBlur .pagination .pages li.active, .backgroundBlur .post_block h3';
+			
+			$("#custom_background span").click(function(){
+				var backgroundImage = $(this).attr("data-backgroundImage");
+				var backgroundColor = $(this).attr("data-backgroundColor");
+				var blurBackgroundColor = $(this).attr("data-blurBackgroundColor");
+				$("style#styleBackground").replaceWith('<style id="styleBackground" type="text/css">' + customBackground + '{ background-color: ' + backgroundColor + '; background-image: url(http://pesway.pes6.ru/public/style_images/dash/backgrounds/' + backgroundImage + '.jpg); }' + blurElements + '{ background-color: ' + blurBackgroundColor + '; background-image: url(http://pesway.pes6.ru/public/style_images/dash/backgrounds/' + backgroundImage + '_blur.jpg); }</style>');
+				$.cookie('dashBackgroundImage',backgroundImage,{ expires: 365, path: '/'});
+				$.cookie('dashBackgroundHex',backgroundColor,{ expires: 365, path: '/'});
+				$.cookie('dashBlurBackgroundHex',blurBackgroundColor,{ expires: 365, path: '/'});
+			});
+		
+			if ( ($.cookie('dashBackgroundImage') != null))	{
+				$("style#styleBackground").replaceWith('<style id="styleBackground" type="text/css">' + customBackground + '{ background-color: ' + $.cookie('dashBackgroundHex') + '; background-image: url(http://pesway.pes6.ru/public/style_images/dash/backgrounds/' + $.cookie('dashBackgroundImage') + '.jpg); }' + blurElements + '{ background-color: ' + $.cookie('dashBlurBackgroundHex') + '; background-image: url(http://pesway.pes6.ru/public/style_images/dash/backgrounds/' + $.cookie('dashBackgroundImage') + '_blur.jpg); }</style>');
+			}
+			else{
+				$("style#styleBackground").replaceWith('<style id="styleBackground" type="text/css">' + customBackground + '{ background-color: #c1b2ab; background-image: url(http://pesway.pes6.ru/public/style_images/dash/backgrounds/background1.jpg); }' + blurElements + '{ background-color: #645d57; background-image: url(http://pesway.pes6.ru/public/style_images/dash/backgrounds/background1_blur.jpg); }</style>');
+			}
+		
+		});
+		</script>
+		<style type='text/css' id='styleBackground'></style>
+		<script type='text/javascript' src='http://pesway.pes6.ru/public/min/index.php?ipbv=8e606a4ce8614ada3164384324b87ae1&amp;g=js'></script>
+	
+	<script type='text/javascript' src='http://pesway.pes6.ru/public/min/index.php?ipbv=8e606a4ce8614ada3164384324b87ae1&amp;charset=UTF-8&amp;f=public/js/ipb.js,cache/lang_cache/2/ipb.lang.js,public/js/ips.hovercard.js,public/js/ips.quickpm.js,public/js/ips.board.js' charset='UTF-8'></script>
+
+
+	
+		
+			
+			
+			
+			
+				<link id="ipsCanonical" rel="canonical" href="http://pesway.pes6.ru/" />
+			
+		
+	
+
+	
+
+
+	
+
+
+
+<!-- Forces topic photo to show without thumb -->
+	<style type='text/css'>
+		.ipsUserPhoto_variable { max-width: 150px !important; }
+		
+			.post_body { margin-left: 185px !important; }
+		
+	</style>		
+		<script type='text/javascript'>
+	//<![CDATA[
+		/* ---- URLs ---- */
+		ipb.vars['base_url'] 			= 'http://pesway.pes6.ru/index.php?s=2dbf7bc1831b4bf782326a54847ac7c7&';
+		ipb.vars['board_url']			= 'http://pesway.pes6.ru';
+		ipb.vars['img_url'] 			= "http://pesway.pes6.ru/public/style_images/dash";
+		ipb.vars['loading_img'] 		= 'http://pesway.pes6.ru/public/style_images/dash/loading.gif';
+		ipb.vars['active_app']			= 'forums';
+		ipb.vars['upload_url']			= 'http://pesway.pes6.ru/uploads';
+		/* ---- Member ---- */
+		ipb.vars['member_id']			= parseInt( 0 );
+		ipb.vars['is_supmod']			= parseInt( 0 );
+		ipb.vars['is_admin']			= parseInt( 0 );
+		ipb.vars['secure_hash'] 		= '880ea6a14ea49e853634fbdc5015a024';
+		ipb.vars['session_id']			= '2dbf7bc1831b4bf782326a54847ac7c7';
+		ipb.vars['twitter_id']			= 0;
+		ipb.vars['fb_uid']				= 0;
+		ipb.vars['auto_dst']			= parseInt( 0 );
+		ipb.vars['dst_in_use']			= parseInt(  );
+		ipb.vars['is_touch']			= false;
+		ipb.vars['member_group']		= {"g_mem_info":"0"}
+		/* ---- cookies ----- */
+		ipb.vars['cookie_id'] 			= '';
+		ipb.vars['cookie_domain'] 		= '';
+		ipb.vars['cookie_path']			= '/';
+		/* ---- Rate imgs ---- */
+		ipb.vars['rate_img_on']			= 'http://pesway.pes6.ru/public/style_images/dash/star.png';
+		ipb.vars['rate_img_off']		= 'http://pesway.pes6.ru/public/style_images/dash/star_off.png';
+		ipb.vars['rate_img_rated']		= 'http://pesway.pes6.ru/public/style_images/dash/star_rated.png';
+		/* ---- Uploads ---- */
+		ipb.vars['swfupload_swf']		= 'http://pesway.pes6.ru/public/js/3rd_party/swfupload/swfupload.swf';
+		ipb.vars['swfupload_enabled']	= true;
+		ipb.vars['use_swf_upload']		= ( '' == 'flash' ) ? true : false;
+		ipb.vars['swfupload_debug']		= false;
+		/* ---- other ---- */
+		ipb.vars['highlight_color']     = "#ade57a";
+		ipb.vars['charset']				= "UTF-8";
+		ipb.vars['time_offset']			= "4";
+		ipb.vars['hour_format']			= "24";
+		ipb.vars['seo_enabled']			= 1;
+		
+		ipb.vars['seo_params']			= {"start":"-","end":"\/","varBlock":"?","varPage":"page-","varSep":"&","varJoin":"="};
+		
+		/* Templates/Language */
+		ipb.templates['inlineMsg']		= "";
+		ipb.templates['ajax_loading'] 	= "<div id='ajax_loading'><img src='http://pesway.pes6.ru/public/style_images/dash/ajax_loading.gif' alt='" + ipb.lang['loading'] + "' /></div>";
+		ipb.templates['close_popup']	= "<img src='http://pesway.pes6.ru/public/style_images/dash/close_popup.png' alt='x' />";
+		ipb.templates['rss_shell']		= new Template("<ul id='rss_menu' class='ipbmenu_content'>#{items}</ul>");
+		ipb.templates['rss_item']		= new Template("<li><a href='#{url}' title='#{title}'>#{title}</a></li>");
+		
+		ipb.templates['autocomplete_wrap'] = new Template("<ul id='#{id}' class='ipb_autocomplete' style='width: 250px;'></ul>");
+		ipb.templates['autocomplete_item'] = new Template("<li id='#{id}' data-url='#{url}'><img src='#{img}' alt='' class='ipsUserPhoto ipsUserPhoto_mini' />&nbsp;&nbsp;#{itemvalue}</li>");
+		ipb.templates['page_jump']		= new Template("<div id='#{id}_wrap' class='ipbmenu_content'><h3 class='bar'>Перейти к странице</h3><p class='ipsPad'><input type='text' class='input_text' id='#{id}_input' size='8' /> <input type='submit' value='ОК' class='input_submit add_folder' id='#{id}_submit' /></p></div>");
+		ipb.templates['global_notify'] 	= new Template("<div class='popupWrapper'><div class='popupInner'><div class='ipsPad'>#{message} #{close}</div></div></div>");
+		
+		
+		ipb.templates['header_menu'] 	= new Template("<div id='#{id}' class='ipsHeaderMenu boxShadow'></div>");
+		
+		Loader.boot();
+	//]]>
+	</script>
+
+
+	<script type='text/javascript' src='http://pesway.pes6.ru/public/js/shoutbox.js'></script>
+
+<script type='text/javascript' src='http://pesway.pes6.ru/public/sounds/soundmanager2-nodebug-jsmin.js'></script>
+<script type='text/javascript'>document.observe('dom:loaded', function() { soundManager.url = 'http://pesway.pes6.ru/public/sounds/';soundManager.debugMode=false; });</script>
+</head>
+
+
+	<body class='backgroundBlur cbe' id='ipboard_body'>
+        <p id='content_jump' class='hide'><a id='top'></a><a href='#j_content' title='Перейти к содержимому' accesskey='m'>Перейти к содержимому</a></p>
+		<div id='ipbwrapper' class='wrapper'>
+
+
+			<div id="branding">
+
+
+                <div id='logo'>
+                    
+                        
+
+<div class=ImgWrap><a href="http://pesway.pes6.ru" class="logo2"><img class="image UP" src="http://pesway.pes6.ru/public/style_images/dash/logo.png"/><img class="image Down" src="http://pesway.pes6.ru/public/style_images/dash/logo2.png"/></a></div>
+
+<div class="lmoemb">
+<div class=ImgWrap><a href="http://pesway.pes6.ru/newbase/newbase2/teamselect.php"  title="Database" target="_blank"><img class="image UP" src="http://pesway.pes6.ru/img/lmo/database.png"/><img class="image Down" src="http://pesway.pes6.ru/img/lmo/database2.png"/></a></div>
+<div class=ImgWrap>
+<a href="http://pesway.pes6.ru/lmo/lmo.php?todo=&file=england1.l98"  title="Premier League" target="_blank"><img class="image UP" src="http://pesway.pes6.ru/img/lmo/england2.png"/><img class="image Down" src="http://pesway.pes6.ru/img/lmo/england22.png"/></a></div>
+<div class=ImgWrap><a href="http://pesway.pes6.ru/lmo/lmo.php?todo=&file=spain1.l98"  title="La Liga" target="_blank"><img class="image UP" src="http://pesway.pes6.ru/img/lmo/spain2.png"/><img class="image Down" src="http://pesway.pes6.ru/img/lmo/spain22.png"/></a></div>
+<div class=ImgWrap><a href="http://pesway.pes6.ru/lmo/lmo.php?todo=&file=italy1.l98"  title="Serie A TIM" target="_blank"><img class="image UP" src="http://pesway.pes6.ru/img/lmo/italy2.png"/><img class="image Down" src="http://pesway.pes6.ru/img/lmo/italy22.png"/></a></div>
+<div class=ImgWrap><a href="http://pesway.pes6.ru/lmo/lmo.php?todo=&file=superliga1.l98"  title="Superliga" target="_blank"><img class="image UP" src="http://pesway.pes6.ru/img/lmo/superliga2.png"/><img class="image Down" src="http://pesway.pes6.ru/img/lmo/superliga22.png"/></a></div>
+<div class=ImgWrap><a href="http://pesway.pes6.ru/index.php?app=cp&do=show&pageId=1"  title="Eurocups" target="_blank"><img class="image UP" src="http://pesway.pes6.ru/img/lmo/eurocups2.png"/><img class="image Down" src="http://pesway.pes6.ru/img/lmo/eurocups22.png"/></a></div>
+</div>
+                    
+                </div>
+			                <div id='search' class='right'>
+	<form action="http://pesway.pes6.ru/index.php?app=core&amp;module=search&amp;do=search&amp;fromMainBar=1" method="post" id='search-box' >
+		<fieldset>
+			<label for='main_search' class='hide'>Поиск</label>
+			<span id='search_wrap' class='right'>
+				<input type='text' id='main_search' name='search_term' class='inactive' size='17' tabindex='100' />
+				<span class='choice ipbmenu clickable' id='search_options' style='display: none'></span>
+				<ul id='search_options_menucontent' class='ipbmenu_content ipsPad' style='display: none'>
+					<li class='title'><strong>Искать в:</strong></li>
+					
+					
+					
+					<li class='app'><label for='s_forums' title='Форумы'><input type='radio' name='search_app' class='input_radio' id='s_forums' value="forums" checked="checked" />Форумы</label></li><li class='app'><label for='s_members' title='Пользователи'><input type='radio' name='search_app' class='input_radio' id='s_members' value="members"  />Пользователи</label></li><li class='app'><label for='s_core' title='Помощь'><input type='radio' name='search_app' class='input_radio' id='s_core' value="core"  />Помощь</label></li>				
+						
+					
+				
+						
+					
+				
+						
+					
+				
+						
+					
+				
+						
+					
+				
+						
+					
+				
+						
+					
+				
+						
+					
+<li><a href='http://pesway.pes6.ru/index.php?app=core&amp;module=search&amp;search_in=forums' title='Расширенный поиск' accesskey='4' rel="search">Расширенный поиск</a></li>
+				</ul>
+				<input type='submit' class='submit_input clickable' value='Поиск' />
+			</span>
+			
+		</fieldset>
+	</form>
+</div>
+			</div>
+
+			<div id="shadowWrap" class="clearfix">
+
+			<div id="sideNav">
+
+            <h4>Привет, гость</h4>
+
+                <div id='user_navigation' class='not_logged_in'>
+                    
+                    <ul class='ipsList_inline'>
+                        <li>
+                            <span class='services'>
+                                
+                                
+                                
+                            </span>
+                            <a href='http://pesway.pes6.ru/index.php?app=core&amp;module=global&amp;section=login' title='Войти' id='sign_in'><img src="http://pesway.pes6.ru/public/style_images/dash/user_login.png" alt="" /> Войти</a>
+                        </li>
+                        <li>
+                            <a href="http://pesway.pes6.ru/index.php?app=core&amp;module=global&amp;section=register" title='Регистрация' id='register_link'><img src="http://pesway.pes6.ru/public/style_images/dash/user_register.png" alt="" /> Регистрация</a>
+                        </li>
+                    </ul>
+                </div>
+		                		<!-- ::: APPLICATION TABS ::: -->
+
+					
+
+
+
+
+
+
+
+
+
+
+
+
+					</if>
+
+
+			<h4 id="togNav">Навигация<span class="sideShow"></span></h4>
+
+						<ul class="ipsList_inline" id="community_app_menu">
+						
+<li><a href="http://pesway.pes6.ru/newbase/newbase2/teamselect.php" target="_blank"><img src="http://pesway.pes6.ru/img/mini_base.png">База данных</a></li>	
+<li><a href="http://pesway.pes6.ru/index.php/forum/4-reglament/" target="_blank"><img src="http://pesway.pes6.ru/img/mini_reglament.png">Регламент</a></li>	 
+<li><a href="http://pesway.pes6.ru/index.php?app=cp&do=show&pageId=4" target="_blank"><img src="http://pesway.pes6.ru/img/mini_calendar.png">Календарь сезона</a></li>	
+     <li><a href="http://pesway.pes6.ru/newbase/generator" target="_blank"><img src="http://pesway.pes6.ru/img/mini_uefa.png">Генератор клубов</a></li>
+     <li><a href="http://pesway.pes6.ru/newbase/old_generator/generator_nation.php" target="_blank"><img src="http://pesway.pes6.ru/img/mini_fifa.png">Генератор сборных</a></li>			
+<li><a href="http://pesway.pes6.ru/lmo/lmo.php" target="_blank"><img src="http://pesway.pes6.ru/img/mini_uefa.png">Кубки лиг</a></li>	
+<li><a href="http://pesway.pes6.ru/newbase/psd/psd.php" target="_blank"><img src="http://pesway.pes6.ru/img/mini_psd.png">Стоимость выкупа с конвертера</a></li>
+<li><a href="http://pesway.pes6.ru/newbase/upskills/upskills.php" target="_blank"><img src="http://pesway.pes6.ru/img/mini_training.png">Прокачки игроков</a></li>
+<li><a href="http://pesway.pes6.ru/index.php/jawards/" target="_blank"><img src="http://pesway.pes6.ru/img/mini_zal.png">Зал славы</a></li>
+<li><a href="http://pesway.pes6.ru/index.php?app=forums&module=extras&section=stats&do=leaders" target="_blank"><img src="http://pesway.pes6.ru/img/mini_admin.png">Администрация</a></li>
+<li><a href="http://pesway.pes6.ru/index.php?/members/" target="_blank"><img src="http://pesway.pes6.ru/img/mini_user.png">Пользователи</a></li>
+<li><a href="http://pesway.pes6.ru/index.php/forum/5-patch/" target="_blank"><img src="http://pesway.pes6.ru/img/mini_patch.png">Патч</a></li>
+					
+						</ul>
+					</if>
+
+<h4 id="togNav">Тренеры клубов<span class="sideShow"></span></h4>
+
+						<ul class="ipsList_inline" id="community_app_menu">
+<li><a href="http://pesway.pes6.ru/index.php/topic/10143-spisok-trenerov/" target="_blank"><img src="http://pesway.pes6.ru/img/mini_epl.png">Premier League</a></li>
+<li><a href="http://pesway.pes6.ru/index.php/topic/3125-spisok-trenerov/" target="_blank"><img src="http://pesway.pes6.ru/img/mini_bbva.png">La Liga</a></li>	
+<li><a href="http://pesway.pes6.ru/index.php/topic/109-spisok-trenerov/" target="_blank"><img src="http://pesway.pes6.ru/img/mini_seria.png">Serie A TIM</a></li>
+<li><a href="http://pesway.pes6.ru/index.php/topic/111-spisok-trenerov/" target="_blank"><img src="http://pesway.pes6.ru/img/mini_super.png">SuperLiga</a></li>
+
+							
+						</ul>
+					</if>
+
+
+
+
+
+
+
+				<div id='primary_nav' class='clearfix toggleContent'>
+	                <ul class='ipsList_inline' id='community_app_menu'>
+	            
+	                    
+	                </ul>
+				</div>
+	            
+				
+			</div>
+
+		<div id='mainContent' style='min-height: 924px;'>
+
+                	<div id='nav_wrap' class='clearfix'>
+
+                <div id='socialButtons' class='right'>
+                    <a href="http://www.youtube.com" target="_blank" title="YouTube" class='youtubeButton'></a><a href="http://google.ru" target="_blank" title="Google" class='googleButton'></a><a href="http://vk.com" target="_blank" title="ВКонтакте" class='vimeoButton'></a><a href="http://pesstatsdatabase.com/PSD" target="_blank" title="Pes Stats Database" class='pinterestButton'></a><a href="http://www.transfermarkt.co.uk" target="_blank" title="Transfermarkt" class='flickrButton'></a>
+                </div>
+
+                <div id='secondary_navigation' class='clearfix'>
+                    <ol class='breadcrumb top ipsList_inline left' id='breadcrumb'>
+                                                <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class='first'>
+                                <a href='http://pesway.pes6.ru/' itemprop="url">
+                                    <span itemprop="title">PESWay</span>
+                                </a>
+                            </li>
+                            
+                                            </ol>
+                    <ul id='secondary_links' class='ipsList_inline right'>
+                        <li><a href='http://pesway.pes6.ru/index.php?app=core&amp;module=search&amp;do=viewNewContent&amp;search_app=forums' accesskey='2'>Просмотр новых публикаций</a></li>
+                        <li id='toggleBackgroundPicker'><span data-tooltip="Сменить фон" id="anonymous_element_19"><img src='http://pesway.pes6.ru/public/style_images/dash/changeBackground.png' alt='' /></span></li>
+                    </ul>
+                </div>
+                </div>
+            
+			<!-- ::: MAIN CONTENT AREA ::: -->
+                <div id='content' class='clearfix'>
+				<!-- ::: NAVIGATION BREADCRUMBS ::: -->
+
+                <div id='toggle_background'><div id='custom_background' class='clearfix'><div>
+                    <span data-backgroundImage='background1' data-backgroundColor="#211d1b" data-blurBackgroundColor="#908e8d" style='background-image: url(http://pesway.pes6.ru/public/style_images/dash/backgrounds/background1.jpg);'></span>
+                    <span data-backgroundImage='background2' data-backgroundColor="#c6cdd6" data-blurBackgroundColor="#e3e6eb" style='background-image: url(http://pesway.pes6.ru/public/style_images/dash/backgrounds/background2.jpg);'></span>
+                    <span data-backgroundImage='background3' data-backgroundColor="#e5dccb" data-blurBackgroundColor="#f2eee5" style='background-image: url(http://pesway.pes6.ru/public/style_images/dash/backgrounds/background3.jpg);'></span>
+                    <span data-backgroundImage='background4' data-backgroundColor="#1f5168" data-blurBackgroundColor="#8fa8b4" style='background-image: url(http://pesway.pes6.ru/public/style_images/dash/backgrounds/background4.jpg);'></span>
+                </div></div></div>
+
+				
+                <noscript>
+                    <div class='message error'>
+                        <strong>Отключен JavaScript</strong>
+                        <p>У вас отключен JavaScript. Некоторые возможности системы не будут работать. Пожалуйста, включите JavaScript для получения доступа ко всем функциям.</p>
+                    </div>
+                    <br />
+                </noscript>
+				<!-- ::: CONTENT ::: -->
+				
+				<div class="message unspecific">
+	
+	<p><p class='bbc_center'><a href='http://pesway.ru/index.php/topic/33-%D0%B8%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%86%D0%B8%D1%8F-%D0%B4%D0%BB%D1%8F-%D0%B8%D0%B3%D1%80%D1%8B-%D0%BD%D0%B0-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B5/' class='bbc_url' title='Ссылка' rel='nofollow external'><span style='color: #ff0000'><span style='font-size: 24px;'><strong class='bbc'>Новичок? Инструкция для игры на проекте!</strong></span></span></a></p>
+<p class='bbc_center'><a href='http://pesway.ru/index.php/topic/20749-%D0%BF%D0%B0%D1%82%D1%87-%D0%B4%D0%BB%D1%8F-%D0%B8%D0%B3%D1%80%D1%8B-%D0%BD%D0%B0-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B5-%D0%B4%D0%BE%D0%BF%D0%BE%D0%BB%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F/' class='bbc_url' title='Ссылка' rel='nofollow external'><span style='color: #008000'><span style='font-size: 24px;'><strong class='bbc'>ИГРА, ПАТЧ И АПДЕЙТ!</strong></span></span></a></p>
+<p class='bbc_center'><span style='color: #ff8c00'><span style='font-size: 24px;'><strong class='bbc'><a href='https://vk.me/join/hztwpy_VmX5uCOxoLym8KuS6LJy68KB5GKY=' class='bbc_url' title='Ссылка' rel='nofollow external'>Беседа</a> ВК</strong></span></span></p>
+<p class='bbc_center'><span style='font-size: 24px;'><a href='https://discord.com/invite/DP6QfMQt' class='bbc_url' title='Ссылка' rel='nofollow external'><span style='color: #800080'><strong class='bbc'>Дискорд-Канал(для связи)</strong></span></a></span></p></p>
+</div>
+<br /><!--- ShoutBoxJsLoader ---><!--- ShoutBoxJsLoader --->
+<script type='text/javascript'>
+/* Setup some value */
+ipb.shoutbox.shoutboxGLOBAL = true;
+</script>
+
+<div class='category_block block_wrap' id='category_shoutbox'>
+	<h3 class='maintitle'>
+		<a class='toggle right' href='#' title='Свернуть чат'>Свернуть чат</a>
+		<a href="http://pesway.pes6.ru/index.php/shoutbox/" title='Просмотр чата'>Чат</a>
+		<a href="#" id="shoutbox-popup-button" title="Открыть чат во всплывающем окне"><img src="http://pesway.pes6.ru/public/style_images/dash/shoutbox/popup.png" alt="Открыть чат во всплывающем окне" /></a>
+	</h3>
+	<div class='ipsBox table_wrap'><div class='ipsBox_container'>
+		<table class='ipb_table shoutbox_table'>
+			<tr id='shoutbox-announcement-row' class='row2' style='display:none;'>
+	<td class='altrow' valign='middle' colspan='2'>
+		<div id='shoutbox-announcement-text' class='message'>
+			
+		</div>
+	</td>
+</tr>
+			<tr class='row1'>
+					<td valign='top' class='altrow' colspan='2'>
+						<div id='shoutbox-shouts' style='height:132px;overflow:auto'>
+							
+							<table id='shoutbox-inactive-prompt' style='display:none;'>
+	<tr class='row1'>
+		<td class='altrow short' valign='middle'>
+			Вы были не активны в течение 10 минут(ы).<br />Если вы хотите вернуться в чат, нажмите кнопку <span style='text-decoration: underline;'>Я вернулся</span>
+			<br /><br />
+			<input type='button' value="Я вернулся" class='input_submit' onclick='ipb.shoutbox.processInactivePrompt();' />
+		</td>
+	</tr>
+</table>
+							<table id='shoutbox-shouts-table'>
+								<tbody>
+									<tr class='row2' id='shout-row-74132'><td style='width: 1%; white-space: nowrap;'><img src='http://pesway.pes6.ru/uploads/profile/photo-thumb-1535.jpg?_r=0' width='16' height='16' class='ipsUserPhoto ipsUserPhoto_icon' /></td>
+	<td style='width: 1%; white-space: nowrap;'>
+		
+			<a href="#" class="at_member" data-store="Khabi" title="Вставить имя пользователя в форму сообщения">@</a>&nbsp;
+		
+		<span style='color:red;'>Khabi</span>
+	</td>
+	<td style='width: 1%; white-space: nowrap;'>:</td>
+	<td style='width: 98%;'>
+		<span class='right desc' title=''>(02.02.2024 22:40 )</span>
+		
+			<span class='shoutbox_text'><p><img src='http://pesway.pes6.ru/public/style_emoticons/default/old.png' class='bbc_emoticon' alt=':old:' /></p></span>
+		
+	</td>
+</tr><tr class='row2' id='shout-row-74131'><td style='width: 1%; white-space: nowrap;'><img src='http://pesway.pes6.ru/uploads/profile/photo-thumb-1536.jpg?_r=0' width='16' height='16' class='ipsUserPhoto ipsUserPhoto_icon' /></td>
+	<td style='width: 1%; white-space: nowrap;'>
+		
+			<a href="#" class="at_member" data-store="SERJ" title="Вставить имя пользователя в форму сообщения">@</a>&nbsp;
+		
+		SERJ
+	</td>
+	<td style='width: 1%; white-space: nowrap;'>:</td>
+	<td style='width: 98%;'>
+		<span class='right desc' title=''>(31.01.2024 20:23 )</span>
+		
+			<span class='shoutbox_text'><p>тигр</p></span>
+		
+	</td>
+</tr><tr class='row2' id='shout-row-74130'><td style='width: 1%; white-space: nowrap;'><img src='http://pesway.pes6.ru/uploads/profile/photo-thumb-1535.jpg?_r=0' width='16' height='16' class='ipsUserPhoto ipsUserPhoto_icon' /></td>
+	<td style='width: 1%; white-space: nowrap;'>
+		
+			<a href="#" class="at_member" data-store="Khabi" title="Вставить имя пользователя в форму сообщения">@</a>&nbsp;
+		
+		<span style='color:red;'>Khabi</span>
+	</td>
+	<td style='width: 1%; white-space: nowrap;'>:</td>
+	<td style='width: 98%;'>
+		<span class='right desc' title=''>(30.01.2024 13:50 )</span>
+		
+			<span class='shoutbox_text'><p><img src='http://pesway.pes6.ru/public/style_emoticons/default/EZ.png' class='bbc_emoticon' alt=':EZ:' /></p></span>
+		
+	</td>
+</tr><tr class='row2' id='shout-row-74129'><td style='width: 1%; white-space: nowrap;'><img src='http://pesway.pes6.ru/public/style_images/dash/profile/default_large.png' width='16' height='16' class='ipsUserPhoto ipsUserPhoto_icon' /></td>
+	<td style='width: 1%; white-space: nowrap;'>
+		
+			<a href="#" class="at_member" data-store="Stamf" title="Вставить имя пользователя в форму сообщения">@</a>&nbsp;
+		
+		<span style='color:red;'>Stamf</span>
+	</td>
+	<td style='width: 1%; white-space: nowrap;'>:</td>
+	<td style='width: 98%;'>
+		<span class='right desc' title=''>(30.01.2024 13:32 )</span>
+		
+			<span class='shoutbox_text'><p><img src='http://pesway.pes6.ru/public/style_emoticons/default/wub.png' class='bbc_emoticon' alt=':wub:' /></p></span>
+		
+	</td>
+</tr><tr class='row2' id='shout-row-74128'><td style='width: 1%; white-space: nowrap;'><img src='http://pesway.pes6.ru/public/style_images/dash/profile/default_large.png' width='16' height='16' class='ipsUserPhoto ipsUserPhoto_icon' /></td>
+	<td style='width: 1%; white-space: nowrap;'>
+		
+			<a href="#" class="at_member" data-store="dzenin" title="Вставить имя пользователя в форму сообщения">@</a>&nbsp;
+		
+		dzenin
+	</td>
+	<td style='width: 1%; white-space: nowrap;'>:</td>
+	<td style='width: 98%;'>
+		<span class='right desc' title=''>(23.01.2024 03:40 )</span>
+		
+			<span class='shoutbox_text'><p>тову</p></span>
+		
+	</td>
+</tr><tr class='row2' id='shout-row-74127'><td style='width: 1%; white-space: nowrap;'><img src='http://pesway.pes6.ru/uploads/profile/photo-thumb-1535.jpg?_r=0' width='16' height='16' class='ipsUserPhoto ipsUserPhoto_icon' /></td>
+	<td style='width: 1%; white-space: nowrap;'>
+		
+			<a href="#" class="at_member" data-store="Khabi" title="Вставить имя пользователя в форму сообщения">@</a>&nbsp;
+		
+		<span style='color:red;'>Khabi</span>
+	</td>
+	<td style='width: 1%; white-space: nowrap;'>:</td>
+	<td style='width: 98%;'>
+		<span class='right desc' title=''>(22.01.2024 16:59 )</span>
+		
+			<span class='shoutbox_text'><p>No</p></span>
+		
+	</td>
+</tr><tr class='row2' id='shout-row-74126'><td style='width: 1%; white-space: nowrap;'><img src='http://pesway.pes6.ru/uploads/profile/photo-thumb-1588.jpg?_r=0' width='16' height='16' class='ipsUserPhoto ipsUserPhoto_icon' /></td>
+	<td style='width: 1%; white-space: nowrap;'>
+		
+			<a href="#" class="at_member" data-store="Kudzo" title="Вставить имя пользователя в форму сообщения">@</a>&nbsp;
+		
+		Kudzo
+	</td>
+	<td style='width: 1%; white-space: nowrap;'>:</td>
+	<td style='width: 98%;'>
+		<span class='right desc' title=''>(20.01.2024 22:54 )</span>
+		
+			<span class='shoutbox_text'><p>Есть</p></span>
+		
+	</td>
+</tr><tr class='row2' id='shout-row-74125'><td style='width: 1%; white-space: nowrap;'><img src='http://pesway.pes6.ru/uploads/profile/photo-thumb-163.jpg?_r=0' width='16' height='16' class='ipsUserPhoto ipsUserPhoto_icon' /></td>
+	<td style='width: 1%; white-space: nowrap;'>
+		
+			<a href="#" class="at_member" data-store="wo1se" title="Вставить имя пользователя в форму сообщения">@</a>&nbsp;
+		
+		wo1se
+	</td>
+	<td style='width: 1%; white-space: nowrap;'>:</td>
+	<td style='width: 98%;'>
+		<span class='right desc' title=''>(20.01.2024 12:41 )</span>
+		
+			<span class='shoutbox_text'><p>живые есть?</p></span>
+		
+	</td>
+</tr><tr class='row2' id='shout-row-74124'><td style='width: 1%; white-space: nowrap;'><img src='http://pesway.pes6.ru/uploads/profile/photo-thumb-1535.jpg?_r=0' width='16' height='16' class='ipsUserPhoto ipsUserPhoto_icon' /></td>
+	<td style='width: 1%; white-space: nowrap;'>
+		
+			<a href="#" class="at_member" data-store="Khabi" title="Вставить имя пользователя в форму сообщения">@</a>&nbsp;
+		
+		<span style='color:red;'>Khabi</span>
+	</td>
+	<td style='width: 1%; white-space: nowrap;'>:</td>
+	<td style='width: 98%;'>
+		<span class='right desc' title=''>(16.01.2024 11:14 )</span>
+		
+			<span class='shoutbox_text'><p>Базар жок</p></span>
+		
+	</td>
+</tr><tr class='row2' id='shout-row-74123'><td style='width: 1%; white-space: nowrap;'><img src='http://pesway.pes6.ru/uploads/profile/photo-thumb-1588.jpg?_r=0' width='16' height='16' class='ipsUserPhoto ipsUserPhoto_icon' /></td>
+	<td style='width: 1%; white-space: nowrap;'>
+		
+			<a href="#" class="at_member" data-store="Kudzo" title="Вставить имя пользователя в форму сообщения">@</a>&nbsp;
+		
+		Kudzo
+	</td>
+	<td style='width: 1%; white-space: nowrap;'>:</td>
+	<td style='width: 98%;'>
+		<span class='right desc' title=''>(15.01.2024 23:34 )</span>
+		
+			<span class='shoutbox_text'><p>Ебать, оно живое</p></span>
+		
+	</td>
+</tr><tr class='row2' id='shout-row-74122'><td style='width: 1%; white-space: nowrap;'><img src='http://pesway.pes6.ru/uploads/profile/photo-thumb-1535.jpg?_r=0' width='16' height='16' class='ipsUserPhoto ipsUserPhoto_icon' /></td>
+	<td style='width: 1%; white-space: nowrap;'>
+		
+			<a href="#" class="at_member" data-store="Khabi" title="Вставить имя пользователя в форму сообщения">@</a>&nbsp;
+		
+		<span style='color:red;'>Khabi</span>
+	</td>
+	<td style='width: 1%; white-space: nowrap;'>:</td>
+	<td style='width: 98%;'>
+		<span class='right desc' title=''>(15.01.2024 12:18 )</span>
+		
+			<span class='shoutbox_text'><p><img src='http://pesway.pes6.ru/public/style_emoticons/default/redcard.gif' class='bbc_emoticon' alt=':redcard:' /></p></span>
+		
+	</td>
+</tr><tr class='row2' id='shout-row-74121'><td style='width: 1%; white-space: nowrap;'><img src='http://pesway.pes6.ru/uploads/profile/photo-thumb-1535.jpg?_r=0' width='16' height='16' class='ipsUserPhoto ipsUserPhoto_icon' /></td>
+	<td style='width: 1%; white-space: nowrap;'>
+		
+			<a href="#" class="at_member" data-store="Khabi" title="Вставить имя пользователя в форму сообщения">@</a>&nbsp;
+		
+		<span style='color:red;'>Khabi</span>
+	</td>
+	<td style='width: 1%; white-space: nowrap;'>:</td>
+	<td style='width: 98%;'>
+		<span class='right desc' title=''>(15.01.2024 12:18 )</span>
+		
+			<span class='shoutbox_text'><p>:red_card:</p></span>
+		
+	</td>
+</tr><tr class='row2' id='shout-row-74120'><td style='width: 1%; white-space: nowrap;'><img src='http://pesway.pes6.ru/public/style_images/dash/profile/default_large.png' width='16' height='16' class='ipsUserPhoto ipsUserPhoto_icon' /></td>
+	<td style='width: 1%; white-space: nowrap;'>
+		
+			<a href="#" class="at_member" data-store="Juvelor" title="Вставить имя пользователя в форму сообщения">@</a>&nbsp;
+		
+		Juvelor
+	</td>
+	<td style='width: 1%; white-space: nowrap;'>:</td>
+	<td style='width: 98%;'>
+		<span class='right desc' title=''>(07.06.2021 07:08 )</span>
+		
+			<span class='shoutbox_text'><p>найк сосун писюнов</p></span>
+		
+	</td>
+</tr><tr class='row2' id='shout-row-74119'><td style='width: 1%; white-space: nowrap;'><img src='http://pesway.pes6.ru/uploads/profile/photo-thumb-53.png?_r=0' width='16' height='16' class='ipsUserPhoto ipsUserPhoto_icon' /></td>
+	<td style='width: 1%; white-space: nowrap;'>
+		
+			<a href="#" class="at_member" data-store="DANIL" title="Вставить имя пользователя в форму сообщения">@</a>&nbsp;
+		
+		DANIL
+	</td>
+	<td style='width: 1%; white-space: nowrap;'>:</td>
+	<td style='width: 98%;'>
+		<span class='right desc' title=''>(25.05.2021 23:58 )</span>
+		
+			<span class='shoutbox_text'><p>@ez4me чет мде, вроде активность была по ходу сезона, но как обычно после рестарта *** забивают</p></span>
+		
+	</td>
+</tr><tr class='row2' id='shout-row-74118'><td style='width: 1%; white-space: nowrap;'><img src='http://pesway.pes6.ru/public/style_images/dash/profile/default_large.png' width='16' height='16' class='ipsUserPhoto ipsUserPhoto_icon' /></td>
+	<td style='width: 1%; white-space: nowrap;'>
+		
+			<a href="#" class="at_member" data-store="Stamf" title="Вставить имя пользователя в форму сообщения">@</a>&nbsp;
+		
+		<span style='color:red;'>Stamf</span>
+	</td>
+	<td style='width: 1%; white-space: nowrap;'>:</td>
+	<td style='width: 98%;'>
+		<span class='right desc' title=''>(25.05.2021 13:45 )</span>
+		
+			<span class='shoutbox_text'><p>@DANIL коммьюнити дохлое, хотя, по сути, его уже и нет  <img src='http://pesway.pes6.ru/public/style_emoticons/default/unsure.png' class='bbc_emoticon' alt=':unsure:' /></p></span>
+		
+	</td>
+</tr><tr class='row2' id='shout-row-74117'><td style='width: 1%; white-space: nowrap;'><img src='http://pesway.pes6.ru/uploads/profile/photo-thumb-53.png?_r=0' width='16' height='16' class='ipsUserPhoto ipsUserPhoto_icon' /></td>
+	<td style='width: 1%; white-space: nowrap;'>
+		
+			<a href="#" class="at_member" data-store="DANIL" title="Вставить имя пользователя в форму сообщения">@</a>&nbsp;
+		
+		DANIL
+	</td>
+	<td style='width: 1%; white-space: nowrap;'>:</td>
+	<td style='width: 98%;'>
+		<span class='right desc' title=''>(24.05.2021 22:48 )</span>
+		
+			<span class='shoutbox_text'><p>@sjva а реально, из-за чего так?</p></span>
+		
+	</td>
+</tr><tr class='row2' id='shout-row-74111'><td style='width: 1%; white-space: nowrap;'><img src='http://pesway.pes6.ru/public/style_images/dash/profile/default_large.png' width='16' height='16' class='ipsUserPhoto ipsUserPhoto_icon' /></td>
+	<td style='width: 1%; white-space: nowrap;'>
+		
+			<a href="#" class="at_member" data-store="Stamf" title="Вставить имя пользователя в форму сообщения">@</a>&nbsp;
+		
+		<span style='color:red;'>Stamf</span>
+	</td>
+	<td style='width: 1%; white-space: nowrap;'>:</td>
+	<td style='width: 98%;'>
+		<span class='right desc' title=''>(03.05.2021 03:13 )</span>
+		
+			<span class='shoutbox_text'><p><img src='http://pesway.pes6.ru/public/style_emoticons/default/redcard.gif' class='bbc_emoticon' alt=':redcard:' />  <img src='http://pesway.pes6.ru/public/style_emoticons/default/redcard.gif' class='bbc_emoticon' alt=':redcard:' />  <img src='http://pesway.pes6.ru/public/style_emoticons/default/redcard.gif' class='bbc_emoticon' alt=':redcard:' />  <img src='http://pesway.pes6.ru/public/style_emoticons/default/redcard.gif' class='bbc_emoticon' alt=':redcard:' />  <img src='http://pesway.pes6.ru/public/style_emoticons/default/redcard.gif' class='bbc_emoticon' alt=':redcard:' />  <img src='http://pesway.pes6.ru/public/style_emoticons/default/redcard.gif' class='bbc_emoticon' alt=':redcard:' />  <img src='http://pesway.pes6.ru/public/style_emoticons/default/redcard.gif' class='bbc_emoticon' alt=':redcard:' />  <img src='http://pesway.pes6.ru/public/style_emoticons/default/redcard.gif' class='bbc_emoticon' alt=':redcard:' />  <img src='http://pesway.pes6.ru/public/style_emoticons/default/redcard.gif' class='bbc_emoticon' alt=':redcard:' /></p></span>
+		
+	</td>
+</tr><tr class='row2' id='shout-row-74110'><td style='width: 1%; white-space: nowrap;'><img src='http://pesway.pes6.ru/public/style_images/dash/profile/default_large.png' width='16' height='16' class='ipsUserPhoto ipsUserPhoto_icon' /></td>
+	<td style='width: 1%; white-space: nowrap;'>
+		
+			<a href="#" class="at_member" data-store="Stamf" title="Вставить имя пользователя в форму сообщения">@</a>&nbsp;
+		
+		<span style='color:red;'>Stamf</span>
+	</td>
+	<td style='width: 1%; white-space: nowrap;'>:</td>
+	<td style='width: 98%;'>
+		<span class='right desc' title=''>(03.05.2021 03:11 )</span>
+		
+			<span class='shoutbox_text'><p>Выставление ТП/ТН во ВСЕХ ЛИГАХ состоится 16.05.21 [18-00 по МСК]</p></span>
+		
+	</td>
+</tr><tr class='row2' id='shout-row-74109'><td style='width: 1%; white-space: nowrap;'><img src='http://pesway.pes6.ru/public/style_images/dash/profile/default_large.png' width='16' height='16' class='ipsUserPhoto ipsUserPhoto_icon' /></td>
+	<td style='width: 1%; white-space: nowrap;'>
+		
+			<a href="#" class="at_member" data-store="Stamf" title="Вставить имя пользователя в форму сообщения">@</a>&nbsp;
+		
+		<span style='color:red;'>Stamf</span>
+	</td>
+	<td style='width: 1%; white-space: nowrap;'>:</td>
+	<td style='width: 98%;'>
+		<span class='right desc' title=''>(03.05.2021 03:11 )</span>
+		
+			<span class='shoutbox_text'><p>Выставление ТП/ТН во ВСЕХ ЛИГАХ состоится 16.05.21 [18-00 по МСК]</p></span>
+		
+	</td>
+</tr><tr class='row2' id='shout-row-74108'><td style='width: 1%; white-space: nowrap;'><img src='http://pesway.pes6.ru/public/style_images/dash/profile/default_large.png' width='16' height='16' class='ipsUserPhoto ipsUserPhoto_icon' /></td>
+	<td style='width: 1%; white-space: nowrap;'>
+		
+			<a href="#" class="at_member" data-store="Stamf" title="Вставить имя пользователя в форму сообщения">@</a>&nbsp;
+		
+		<span style='color:red;'>Stamf</span>
+	</td>
+	<td style='width: 1%; white-space: nowrap;'>:</td>
+	<td style='width: 98%;'>
+		<span class='right desc' title=''>(03.05.2021 03:11 )</span>
+		
+			<span class='shoutbox_text'><p>Выставление ТП/ТН во ВСЕХ ЛИГАХ состоится 16.05.21 [18-00 по МСК]</p></span>
+		
+	</td>
+</tr><tr class='row2' id='shout-row-74107'><td style='width: 1%; white-space: nowrap;'><img src='http://pesway.pes6.ru/public/style_images/dash/profile/default_large.png' width='16' height='16' class='ipsUserPhoto ipsUserPhoto_icon' /></td>
+	<td style='width: 1%; white-space: nowrap;'>
+		
+			<a href="#" class="at_member" data-store="Stamf" title="Вставить имя пользователя в форму сообщения">@</a>&nbsp;
+		
+		<span style='color:red;'>Stamf</span>
+	</td>
+	<td style='width: 1%; white-space: nowrap;'>:</td>
+	<td style='width: 98%;'>
+		<span class='right desc' title=''>(30.04.2021 14:44 )</span>
+		
+			<span class='shoutbox_text'><p>@Водник под ногой брат ну как ты там, отпустило?</p></span>
+		
+	</td>
+</tr><tr class='row2' id='shout-row-74106'><td style='width: 1%; white-space: nowrap;'><img src='http://pesway.pes6.ru/uploads/profile/photo-thumb-1535.jpg?_r=0' width='16' height='16' class='ipsUserPhoto ipsUserPhoto_icon' /></td>
+	<td style='width: 1%; white-space: nowrap;'>
+		
+			<a href="#" class="at_member" data-store="Khabi" title="Вставить имя пользователя в форму сообщения">@</a>&nbsp;
+		
+		<span style='color:red;'>Khabi</span>
+	</td>
+	<td style='width: 1%; white-space: nowrap;'>:</td>
+	<td style='width: 98%;'>
+		<span class='right desc' title=''>(30.04.2021 01:57 )</span>
+		
+			<span class='shoutbox_text'><p><span rel='lightbox'><img class='bbc_img' src='https://i114.fastpic.ru/big/2021/0430/41/79b2e4e63e7cdac2f53b113059a79341.png' alt='Изображение'  /></span></p></span>
+		
+	</td>
+</tr><tr class='row2' id='shout-row-74105'><td style='width: 1%; white-space: nowrap;'><img src='http://pesway.pes6.ru/uploads/profile/photo-thumb-1565.png?_r=0' width='16' height='16' class='ipsUserPhoto ipsUserPhoto_icon' /></td>
+	<td style='width: 1%; white-space: nowrap;'>
+		
+			<a href="#" class="at_member" data-store="Hox4o" title="Вставить имя пользователя в форму сообщения">@</a>&nbsp;
+		
+		Hox4o
+	</td>
+	<td style='width: 1%; white-space: nowrap;'>:</td>
+	<td style='width: 98%;'>
+		<span class='right desc' title=''>(30.04.2021 01:53 )</span>
+		
+			<span class='shoutbox_text'><p><img src='http://pesway.pes6.ru/public/style_emoticons/default/D83DDE11.png' class='bbc_emoticon' alt=':D83DDE11:' /></p></span>
+		
+	</td>
+</tr><tr class='row2' id='shout-row-74104'><td style='width: 1%; white-space: nowrap;'><img src='http://pesway.pes6.ru/uploads/profile/photo-thumb-1535.jpg?_r=0' width='16' height='16' class='ipsUserPhoto ipsUserPhoto_icon' /></td>
+	<td style='width: 1%; white-space: nowrap;'>
+		
+			<a href="#" class="at_member" data-store="Khabi" title="Вставить имя пользователя в форму сообщения">@</a>&nbsp;
+		
+		<span style='color:red;'>Khabi</span>
+	</td>
+	<td style='width: 1%; white-space: nowrap;'>:</td>
+	<td style='width: 98%;'>
+		<span class='right desc' title=''>(29.04.2021 01:25 )</span>
+		
+			<span class='shoutbox_text'><p><img src='http://pesway.pes6.ru/public/style_emoticons/default/wink.png' class='bbc_emoticon' alt=';)' /></p></span>
+		
+	</td>
+</tr><tr class='row2' id='shout-row-74103'><td style='width: 1%; white-space: nowrap;'><img src='http://pesway.pes6.ru/public/style_images/dash/profile/default_large.png' width='16' height='16' class='ipsUserPhoto ipsUserPhoto_icon' /></td>
+	<td style='width: 1%; white-space: nowrap;'>
+		
+			<a href="#" class="at_member" data-store="donaldd" title="Вставить имя пользователя в форму сообщения">@</a>&nbsp;
+		
+		donaldd
+	</td>
+	<td style='width: 1%; white-space: nowrap;'>:</td>
+	<td style='width: 98%;'>
+		<span class='right desc' title=''>(28.04.2021 01:18 )</span>
+		
+			<span class='shoutbox_text'><p>люблю вас <img src='http://pesway.pes6.ru/public/style_emoticons/default/wub.png' class='bbc_emoticon' alt=':wub:' /> , хоть и токсик</p></span>
+		
+	</td>
+</tr><tr class='row2' id='shout-row-74102'><td style='width: 1%; white-space: nowrap;'><img src='http://pesway.pes6.ru/public/style_images/dash/profile/default_large.png' width='16' height='16' class='ipsUserPhoto ipsUserPhoto_icon' /></td>
+	<td style='width: 1%; white-space: nowrap;'>
+		
+			<a href="#" class="at_member" data-store="Stamf" title="Вставить имя пользователя в форму сообщения">@</a>&nbsp;
+		
+		<span style='color:red;'>Stamf</span>
+	</td>
+	<td style='width: 1%; white-space: nowrap;'>:</td>
+	<td style='width: 98%;'>
+		<span class='right desc' title=''>(27.04.2021 14:29 )</span>
+		
+			<span class='shoutbox_text'><p>@Водник под ногой у тебя есть впн, брат</p></span>
+		
+	</td>
+</tr><tr class='row2' id='shout-row-74101'><td style='width: 1%; white-space: nowrap;'><img src='http://pesway.pes6.ru/public/style_images/dash/profile/default_large.png' width='16' height='16' class='ipsUserPhoto ipsUserPhoto_icon' /></td>
+	<td style='width: 1%; white-space: nowrap;'>
+		
+			<a href="#" class="at_member" data-store="Водник под ногой" title="Вставить имя пользователя в форму сообщения">@</a>&nbsp;
+		
+		Водник под н...
+	</td>
+	<td style='width: 1%; white-space: nowrap;'>:</td>
+	<td style='width: 98%;'>
+		<span class='right desc' title=''>(27.04.2021 14:27 )</span>
+		
+			<span class='shoutbox_text'><p>Я ж хохол , у меня нет вк</p></span>
+		
+	</td>
+</tr><tr class='row2' id='shout-row-74100'><td style='width: 1%; white-space: nowrap;'><img src='http://pesway.pes6.ru/public/style_images/dash/profile/default_large.png' width='16' height='16' class='ipsUserPhoto ipsUserPhoto_icon' /></td>
+	<td style='width: 1%; white-space: nowrap;'>
+		
+			<a href="#" class="at_member" data-store="Stamf" title="Вставить имя пользователя в форму сообщения">@</a>&nbsp;
+		
+		<span style='color:red;'>Stamf</span>
+	</td>
+	<td style='width: 1%; white-space: nowrap;'>:</td>
+	<td style='width: 98%;'>
+		<span class='right desc' title=''>(27.04.2021 14:25 )</span>
+		
+			<span class='shoutbox_text'><p>@Водник под ногой ну в беседу в вк пиши, поиграют <img src='http://pesway.pes6.ru/public/style_emoticons/default/mellow.png' class='bbc_emoticon' alt='-_-' /></p></span>
+		
+	</td>
+</tr><tr class='row2' id='shout-row-74099'><td style='width: 1%; white-space: nowrap;'><img src='http://pesway.pes6.ru/public/style_images/dash/profile/default_large.png' width='16' height='16' class='ipsUserPhoto ipsUserPhoto_icon' /></td>
+	<td style='width: 1%; white-space: nowrap;'>
+		
+			<a href="#" class="at_member" data-store="Stamf" title="Вставить имя пользователя в форму сообщения">@</a>&nbsp;
+		
+		<span style='color:red;'>Stamf</span>
+	</td>
+	<td style='width: 1%; white-space: nowrap;'>:</td>
+	<td style='width: 98%;'>
+		<span class='right desc' title=''>(27.04.2021 14:24 )</span>
+		
+			<span class='shoutbox_text'><p>@Водник под ногой растишка с ума сошёл  <img src='http://pesway.pes6.ru/public/style_emoticons/default/unsure.png' class='bbc_emoticon' alt=':unsure:' /></p></span>
+		
+	</td>
+</tr><tr class='row2' id='shout-row-74098'><td style='width: 1%; white-space: nowrap;'><img src='http://pesway.pes6.ru/public/style_images/dash/profile/default_large.png' width='16' height='16' class='ipsUserPhoto ipsUserPhoto_icon' /></td>
+	<td style='width: 1%; white-space: nowrap;'>
+		
+			<a href="#" class="at_member" data-store="Водник под ногой" title="Вставить имя пользователя в форму сообщения">@</a>&nbsp;
+		
+		Водник под н...
+	</td>
+	<td style='width: 1%; white-space: nowrap;'>:</td>
+	<td style='width: 98%;'>
+		<span class='right desc' title=''>(27.04.2021 14:21 )</span>
+		
+			<span class='shoutbox_text'><p>После работы установлю , кто вечером со мной поиграет</p></span>
+		
+	</td>
+</tr><tr class='row2' id='shout-row-74097'><td style='width: 1%; white-space: nowrap;'><img src='http://pesway.pes6.ru/public/style_images/dash/profile/default_large.png' width='16' height='16' class='ipsUserPhoto ipsUserPhoto_icon' /></td>
+	<td style='width: 1%; white-space: nowrap;'>
+		
+			<a href="#" class="at_member" data-store="Водник под ногой" title="Вставить имя пользователя в форму сообщения">@</a>&nbsp;
+		
+		Водник под н...
+	</td>
+	<td style='width: 1%; white-space: nowrap;'>:</td>
+	<td style='width: 98%;'>
+		<span class='right desc' title=''>(27.04.2021 14:21 )</span>
+		
+			<span class='shoutbox_text'><p>@ez4me Это не тот который растишка</p></span>
+		
+	</td>
+</tr><tr class='row2' id='shout-row-74096'><td style='width: 1%; white-space: nowrap;'><img src='http://pesway.pes6.ru/public/style_images/dash/profile/default_large.png' width='16' height='16' class='ipsUserPhoto ipsUserPhoto_icon' /></td>
+	<td style='width: 1%; white-space: nowrap;'>
+		
+			<a href="#" class="at_member" data-store="Stamf" title="Вставить имя пользователя в форму сообщения">@</a>&nbsp;
+		
+		<span style='color:red;'>Stamf</span>
+	</td>
+	<td style='width: 1%; white-space: nowrap;'>:</td>
+	<td style='width: 98%;'>
+		<span class='right desc' title=''>(27.04.2021 14:19 )</span>
+		
+			<span class='shoutbox_text'><p>@Водник под ногой я данс</p></span>
+		
+	</td>
+</tr><tr class='row2' id='shout-row-74095'><td style='width: 1%; white-space: nowrap;'><img src='http://pesway.pes6.ru/public/style_images/dash/profile/default_large.png' width='16' height='16' class='ipsUserPhoto ipsUserPhoto_icon' /></td>
+	<td style='width: 1%; white-space: nowrap;'>
+		
+			<a href="#" class="at_member" data-store="Stamf" title="Вставить имя пользователя в форму сообщения">@</a>&nbsp;
+		
+		<span style='color:red;'>Stamf</span>
+	</td>
+	<td style='width: 1%; white-space: nowrap;'>:</td>
+	<td style='width: 98%;'>
+		<span class='right desc' title=''>(27.04.2021 14:19 )</span>
+		
+			<span class='shoutbox_text'><p>@Водник под ногой не замерзай</p></span>
+		
+	</td>
+</tr><tr class='row2' id='shout-row-74094'><td style='width: 1%; white-space: nowrap;'><img src='http://pesway.pes6.ru/public/style_images/dash/profile/default_large.png' width='16' height='16' class='ipsUserPhoto ipsUserPhoto_icon' /></td>
+	<td style='width: 1%; white-space: nowrap;'>
+		
+			<a href="#" class="at_member" data-store="Водник под ногой" title="Вставить имя пользователя в форму сообщения">@</a>&nbsp;
+		
+		Водник под н...
+	</td>
+	<td style='width: 1%; white-space: nowrap;'>:</td>
+	<td style='width: 98%;'>
+		<span class='right desc' title=''>(27.04.2021 14:19 )</span>
+		
+			<span class='shoutbox_text'><p>@ez4me я кстати тебя не могу узнать</p></span>
+		
+	</td>
+</tr><tr class='row2' id='shout-row-74093'><td style='width: 1%; white-space: nowrap;'><img src='http://pesway.pes6.ru/public/style_images/dash/profile/default_large.png' width='16' height='16' class='ipsUserPhoto ipsUserPhoto_icon' /></td>
+	<td style='width: 1%; white-space: nowrap;'>
+		
+			<a href="#" class="at_member" data-store="Водник под ногой" title="Вставить имя пользователя в форму сообщения">@</a>&nbsp;
+		
+		Водник под н...
+	</td>
+	<td style='width: 1%; white-space: nowrap;'>:</td>
+	<td style='width: 98%;'>
+		<span class='right desc' title=''>(27.04.2021 14:18 )</span>
+		
+			<span class='shoutbox_text'><p>На работе, дождь целый день идёт , кумарит ((</p></span>
+		
+	</td>
+</tr><tr class='row2' id='shout-row-74092'><td style='width: 1%; white-space: nowrap;'><img src='http://pesway.pes6.ru/public/style_images/dash/profile/default_large.png' width='16' height='16' class='ipsUserPhoto ipsUserPhoto_icon' /></td>
+	<td style='width: 1%; white-space: nowrap;'>
+		
+			<a href="#" class="at_member" data-store="Stamf" title="Вставить имя пользователя в форму сообщения">@</a>&nbsp;
+		
+		<span style='color:red;'>Stamf</span>
+	</td>
+	<td style='width: 1%; white-space: nowrap;'>:</td>
+	<td style='width: 98%;'>
+		<span class='right desc' title=''>(27.04.2021 14:17 )</span>
+		
+			<span class='shoutbox_text'><p>@Водник под ногой  ну чё ты там брат</p></span>
+		
+	</td>
+</tr><tr class='row2' id='shout-row-74091'><td style='width: 1%; white-space: nowrap;'><img src='http://pesway.pes6.ru/uploads/profile/photo-thumb-1535.jpg?_r=0' width='16' height='16' class='ipsUserPhoto ipsUserPhoto_icon' /></td>
+	<td style='width: 1%; white-space: nowrap;'>
+		
+			<a href="#" class="at_member" data-store="Khabi" title="Вставить имя пользователя в форму сообщения">@</a>&nbsp;
+		
+		<span style='color:red;'>Khabi</span>
+	</td>
+	<td style='width: 1%; white-space: nowrap;'>:</td>
+	<td style='width: 98%;'>
+		<span class='right desc' title=''>(27.04.2021 14:16 )</span>
+		
+			<span class='shoutbox_text'><p>в дурке</p></span>
+		
+	</td>
+</tr><tr class='row2' id='shout-row-74090'><td style='width: 1%; white-space: nowrap;'><img src='http://pesway.pes6.ru/public/style_images/dash/profile/default_large.png' width='16' height='16' class='ipsUserPhoto ipsUserPhoto_icon' /></td>
+	<td style='width: 1%; white-space: nowrap;'>
+		
+			<a href="#" class="at_member" data-store="Водник под ногой" title="Вставить имя пользователя в форму сообщения">@</a>&nbsp;
+		
+		Водник под н...
+	</td>
+	<td style='width: 1%; white-space: nowrap;'>:</td>
+	<td style='width: 98%;'>
+		<span class='right desc' title=''>(27.04.2021 14:16 )</span>
+		
+			<span class='shoutbox_text'><p>Или сдох уже от передоза</p></span>
+		
+	</td>
+</tr><tr class='row2' id='shout-row-74089'><td style='width: 1%; white-space: nowrap;'><img src='http://pesway.pes6.ru/public/style_images/dash/profile/default_large.png' width='16' height='16' class='ipsUserPhoto ipsUserPhoto_icon' /></td>
+	<td style='width: 1%; white-space: nowrap;'>
+		
+			<a href="#" class="at_member" data-store="Водник под ногой" title="Вставить имя пользователя в форму сообщения">@</a>&nbsp;
+		
+		Водник под н...
+	</td>
+	<td style='width: 1%; white-space: nowrap;'>:</td>
+	<td style='width: 98%;'>
+		<span class='right desc' title=''>(27.04.2021 14:16 )</span>
+		
+			<span class='shoutbox_text'><p>А где растишка, он ещё живой?</p></span>
+		
+	</td>
+</tr><tr class='row2' id='shout-row-74088'><td style='width: 1%; white-space: nowrap;'><img src='http://pesway.pes6.ru/uploads/profile/photo-thumb-1535.jpg?_r=0' width='16' height='16' class='ipsUserPhoto ipsUserPhoto_icon' /></td>
+	<td style='width: 1%; white-space: nowrap;'>
+		
+			<a href="#" class="at_member" data-store="Khabi" title="Вставить имя пользователя в форму сообщения">@</a>&nbsp;
+		
+		<span style='color:red;'>Khabi</span>
+	</td>
+	<td style='width: 1%; white-space: nowrap;'>:</td>
+	<td style='width: 98%;'>
+		<span class='right desc' title=''>(26.04.2021 22:55 )</span>
+		
+			<span class='shoutbox_text'><p>Нуб</p></span>
+		
+	</td>
+</tr><tr class='row2' id='shout-row-74087'><td style='width: 1%; white-space: nowrap;'><img src='http://pesway.pes6.ru/public/style_images/dash/profile/default_large.png' width='16' height='16' class='ipsUserPhoto ipsUserPhoto_icon' /></td>
+	<td style='width: 1%; white-space: nowrap;'>
+		
+			<a href="#" class="at_member" data-store="Водник под ногой" title="Вставить имя пользователя в форму сообщения">@</a>&nbsp;
+		
+		Водник под н...
+	</td>
+	<td style='width: 1%; white-space: nowrap;'>:</td>
+	<td style='width: 98%;'>
+		<span class='right desc' title=''>(26.04.2021 18:49 )</span>
+		
+			<span class='shoutbox_text'><p>Татарская ракета , я шишки такие курил , нормально прут</p></span>
+		
+	</td>
+</tr><tr class='row2' id='shout-row-74086'><td style='width: 1%; white-space: nowrap;'><img src='http://pesway.pes6.ru/public/style_images/dash/profile/default_large.png' width='16' height='16' class='ipsUserPhoto ipsUserPhoto_icon' /></td>
+	<td style='width: 1%; white-space: nowrap;'>
+		
+			<a href="#" class="at_member" data-store="Водник под ногой" title="Вставить имя пользователя в форму сообщения">@</a>&nbsp;
+		
+		Водник под н...
+	</td>
+	<td style='width: 1%; white-space: nowrap;'>:</td>
+	<td style='width: 98%;'>
+		<span class='right desc' title=''>(26.04.2021 18:37 )</span>
+		
+			<span class='shoutbox_text'><p>Татарин ещё живой ????????</p></span>
+		
+	</td>
+</tr><tr class='row2' id='shout-row-74085'><td style='width: 1%; white-space: nowrap;'><img src='http://pesway.pes6.ru/public/style_images/dash/profile/default_large.png' width='16' height='16' class='ipsUserPhoto ipsUserPhoto_icon' /></td>
+	<td style='width: 1%; white-space: nowrap;'>
+		
+			<a href="#" class="at_member" data-store="Водник под ногой" title="Вставить имя пользователя в форму сообщения">@</a>&nbsp;
+		
+		Водник под н...
+	</td>
+	<td style='width: 1%; white-space: nowrap;'>:</td>
+	<td style='width: 98%;'>
+		<span class='right desc' title=''>(26.04.2021 18:36 )</span>
+		
+			<span class='shoutbox_text'><p>Та надо ща все скачать , потребить я 100 лет в 6 не играл</p></span>
+		
+	</td>
+</tr><tr class='row2' id='shout-row-74084'><td style='width: 1%; white-space: nowrap;'><img src='http://pesway.pes6.ru/public/style_images/dash/profile/default_large.png' width='16' height='16' class='ipsUserPhoto ipsUserPhoto_icon' /></td>
+	<td style='width: 1%; white-space: nowrap;'>
+		
+			<a href="#" class="at_member" data-store="Stamf" title="Вставить имя пользователя в форму сообщения">@</a>&nbsp;
+		
+		<span style='color:red;'>Stamf</span>
+	</td>
+	<td style='width: 1%; white-space: nowrap;'>:</td>
+	<td style='width: 98%;'>
+		<span class='right desc' title=''>(26.04.2021 17:21 )</span>
+		
+			<span class='shoutbox_text'><p>@Водник под ногой клуб бери</p></span>
+		
+	</td>
+</tr><tr class='row2' id='shout-row-74083'><td style='width: 1%; white-space: nowrap;'><img src='http://pesway.pes6.ru/uploads/profile/photo-thumb-1535.jpg?_r=0' width='16' height='16' class='ipsUserPhoto ipsUserPhoto_icon' /></td>
+	<td style='width: 1%; white-space: nowrap;'>
+		
+			<a href="#" class="at_member" data-store="Khabi" title="Вставить имя пользователя в форму сообщения">@</a>&nbsp;
+		
+		<span style='color:red;'>Khabi</span>
+	</td>
+	<td style='width: 1%; white-space: nowrap;'>:</td>
+	<td style='width: 98%;'>
+		<span class='right desc' title=''>(26.04.2021 16:09 )</span>
+		
+			<span class='shoutbox_text'><p>Коля татарин</p></span>
+		
+	</td>
+</tr><tr class='row2' id='shout-row-74082'><td style='width: 1%; white-space: nowrap;'><img src='http://pesway.pes6.ru/public/style_images/dash/profile/default_large.png' width='16' height='16' class='ipsUserPhoto ipsUserPhoto_icon' /></td>
+	<td style='width: 1%; white-space: nowrap;'>
+		
+			<a href="#" class="at_member" data-store="Stamf" title="Вставить имя пользователя в форму сообщения">@</a>&nbsp;
+		
+		<span style='color:red;'>Stamf</span>
+	</td>
+	<td style='width: 1%; white-space: nowrap;'>:</td>
+	<td style='width: 98%;'>
+		<span class='right desc' title=''>(26.04.2021 15:40 )</span>
+		
+			<span class='shoutbox_text'><p>@Водник под ногой не ври, он пропал безвести..</p></span>
+		
+	</td>
+</tr><tr class='row2' id='shout-row-74081'><td style='width: 1%; white-space: nowrap;'><img src='http://pesway.pes6.ru/public/style_images/dash/profile/default_large.png' width='16' height='16' class='ipsUserPhoto ipsUserPhoto_icon' /></td>
+	<td style='width: 1%; white-space: nowrap;'>
+		
+			<a href="#" class="at_member" data-store="Водник под ногой" title="Вставить имя пользователя в форму сообщения">@</a>&nbsp;
+		
+		Водник под н...
+	</td>
+	<td style='width: 1%; white-space: nowrap;'>:</td>
+	<td style='width: 98%;'>
+		<span class='right desc' title=''>(26.04.2021 15:39 )</span>
+		
+			<span class='shoutbox_text'><p>Это я</p></span>
+		
+	</td>
+</tr><tr class='row2' id='shout-row-74080'><td style='width: 1%; white-space: nowrap;'><img src='http://pesway.pes6.ru/public/style_images/dash/profile/default_large.png' width='16' height='16' class='ipsUserPhoto ipsUserPhoto_icon' /></td>
+	<td style='width: 1%; white-space: nowrap;'>
+		
+			<a href="#" class="at_member" data-store="Stamf" title="Вставить имя пользователя в форму сообщения">@</a>&nbsp;
+		
+		<span style='color:red;'>Stamf</span>
+	</td>
+	<td style='width: 1%; white-space: nowrap;'>:</td>
+	<td style='width: 98%;'>
+		<span class='right desc' title=''>(26.04.2021 15:34 )</span>
+		
+			<span class='shoutbox_text'><p>@Водник под ногой  конечно</p></span>
+		
+	</td>
+</tr><tr class='row2' id='shout-row-74079'><td style='width: 1%; white-space: nowrap;'><img src='http://pesway.pes6.ru/public/style_images/dash/profile/default_large.png' width='16' height='16' class='ipsUserPhoto ipsUserPhoto_icon' /></td>
+	<td style='width: 1%; white-space: nowrap;'>
+		
+			<a href="#" class="at_member" data-store="Водник под ногой" title="Вставить имя пользователя в форму сообщения">@</a>&nbsp;
+		
+		Водник под н...
+	</td>
+	<td style='width: 1%; white-space: nowrap;'>:</td>
+	<td style='width: 98%;'>
+		<span class='right desc' title=''>(26.04.2021 15:32 )</span>
+		
+			<span class='shoutbox_text'><p>Помнишь тут как-то давно один играл kololo Ник был</p></span>
+		
+	</td>
+</tr><tr class='row2' id='shout-row-74078'><td style='width: 1%; white-space: nowrap;'><img src='http://pesway.pes6.ru/public/style_images/dash/profile/default_large.png' width='16' height='16' class='ipsUserPhoto ipsUserPhoto_icon' /></td>
+	<td style='width: 1%; white-space: nowrap;'>
+		
+			<a href="#" class="at_member" data-store="Stamf" title="Вставить имя пользователя в форму сообщения">@</a>&nbsp;
+		
+		<span style='color:red;'>Stamf</span>
+	</td>
+	<td style='width: 1%; white-space: nowrap;'>:</td>
+	<td style='width: 98%;'>
+		<span class='right desc' title=''>(26.04.2021 15:30 )</span>
+		
+			<span class='shoutbox_text'><p>@Водник под ногой сирко</p></span>
+		
+	</td>
+</tr>
+								</tbody>
+							</table>
+						</div>
+						<div id='shouts-global-resizer'></div>
+						<div id='shoutbox-inline-error-glb' class='message error block_wrap' style='display:none;'></div>
+					</td>
+				</tr>
+				
+		</table>
+	</div></div>
+</div>
+<br class="clear"/>
+<script type='text/javascript'>
+//<![CDATA[
+ipb.shoutbox.myMemberID       = parseInt(0);
+ipb.shoutbox.can_use          = parseInt(0);
+ipb.shoutbox.can_edit         = parseInt(0);
+ipb.shoutbox.flood_limit      = parseInt(0);
+ipb.shoutbox.bypass_flood     = parseInt(0);
+ipb.shoutbox.can_access_acp   = parseInt(0);
+ipb.shoutbox.view_archive     = false;
+ipb.shoutbox.enable_fade      = parseInt(1);
+ipb.shoutbox.inactive_timeout = parseInt(10);
+ipb.shoutbox.hide_refresh     = parseInt(0);
+ipb.shoutbox.members_refresh  = Array['shoutbox_members_viewing_refresh'] < 30 ? 30000 : parseInt(30)*1000;
+ipb.shoutbox.shouts_refresh   = Array['shoutbox_shouts_refresh'] < 30 ? 30000 : parseInt(30)*1000;
+ipb.shoutbox.total_shouts     = parseInt(70103);
+ipb.shoutbox.shout_order      = 'desc';
+ipb.shoutbox.moderator        = 0;
+
+ipb.shoutbox.my_prefs         = { 'shoutbox_height' : "275", 'shoutbox_gheight' : "132", 'global_display' : "1", 'enter_key_shout' : "1", 'enable_quick_commands' : "1", 'display_refresh_button' : "1" };
+ipb.shoutbox.img_disable      = parseInt(1);
+ipb.shoutbox.member_name      = 'Guest';
+ipb.shoutbox.can_me_tag       = parseInt(1);
+
+ipb.shoutbox.langs['mod_loaded_confirm'] = "Пожалуйста, подтвердите действие";
+ipb.shoutbox.langs['my_prefs_loaded'] = "Настройки загружены";
+ipb.shoutbox.langs['sb_archive'] = "Архив чата";
+ipb.shoutbox.langs['sb_archive_loaded'] = "Архив чата загружен";
+ipb.shoutbox.langs['filtered'] = "Отфильтровано";
+ipb.shoutbox.langs['page'] = "Страница";
+ipb.shoutbox.langs['of'] = " ";
+ipb.shoutbox.langs['filter_member_name_status'] = "Фильтр сообщений по пользователям. Введите имена через запятую (,)";
+ipb.shoutbox.langs['prefs_restored'] = "Ваши настройки были восстановлены";
+ipb.shoutbox.langs['prefs_saved'] = "Сохранено";
+ipb.shoutbox.langs['filtering'] = "Фильтрация...";
+ipb.shoutbox.langs['mod_shout_edited'] = "Сообщение отредактировано";
+ipb.shoutbox.langs['processing'] = "Пожалуйста, подождите...";
+ipb.shoutbox.langs['processed'] = "В процессе";
+ipb.shoutbox.langs['saving_prefs'] = "Сохранение...";
+ipb.shoutbox.langs['mod_opts_start_status'] = "Ожидание...";
+ipb.shoutbox.langs['mod_opts_start_content'] = "Эта панель позволяет выполнять различные действия в зависимости от ваших прав.<br />Для начала выберите действие<br /><br />";
+ipb.shoutbox.langs['sure_delete_shout'] = "Вы уверены, что хотите удалить это сообщение?";
+ipb.shoutbox.errors['blank_shout'] = "Пустое сообщение.";
+ipb.shoutbox.errors['shout_too_big'] = "Ваше сообщение слишком длинное";
+ipb.shoutbox.errors['no_cmds_enabled'] = "У вас не настроены быстрые команды, для настройки перейдите в настройки предпочтений.";
+ipb.shoutbox.errors['prefs_login'] = "Вы должны войти, чтобы отредактировать свои настройки";
+ipb.shoutbox.errors['no_archive_perm'] = "У вас нет прав на просмотр архива чата!";
+ipb.shoutbox.errors['invalid_command'] = "Эта команда не распознана, пожалуйста, проверьте правильность команды.";
+ipb.shoutbox.errors['mod_no_perm'] = "Вы не имеете прав модератора для выполнения этого действия!";
+ipb.shoutbox.errors['mod_no_perms'] = "Вы не имеете прав модератора!";
+ipb.shoutbox.errors['member_name_too_short'] = "Имя пользователя введено не верно, разрешено более 3 символов.";
+ipb.shoutbox.errors['member_names_too_short'] = "Имя пользователя введено не верно, разрешено более 3 символов.";
+ipb.shoutbox.errors['no_acp_access'] = "Вы не имеете права входа в админцентр!";
+ipb.shoutbox.errors['flooding'] = "Включён лимит сообщений. Пожалуйста, подождите {#EXTRA#} секунд.";
+ipb.shoutbox.errors['prune_invalid_number'] = "Вы должны ввести число после команды '/prune ' для её работоспособности!";
+ipb.shoutbox.errors['mod_invalid_name'] = "Имя пользователя введено не верно.";
+ipb.shoutbox.errors['mod_no_action'] = "Неизвестное действие";
+ipb.shoutbox.errors['loading_members_viewing'] = "Ошибка загрузки!";
+ipb.shoutbox.errors['already_submitting'] = "Сообщение добавляется";
+ipb.shoutbox.errors['already_filtering'] = "Фильтр сообщений уже применяется";
+ipb.shoutbox.errors['no_found_shout'] = "";
+ipb.shoutbox.errors['no_delete_shout'] = "";
+
+//]]>
+</script>
+
+
+<div id='board_index' class='ipsLayout ipsLayout_withright ipsLayout_largeright clearfix '>	
+	<div id='categories' class='ipsLayout_content clearfix'>
+	<!-- CATS AND FORUMS -->
+		
+			
+				<div id='category_1' class='category_block block_wrap'>
+						<div class='blurBox'><h3 class='maintitle'>
+							<a class='toggle right' href='#' title="Свернуть ГЛАВНОЕ">Свернуть ГЛАВНОЕ</a> <a href="http://pesway.pes6.ru/index.php/forum/1-главное/" title='Просмотр ГЛАВНОЕ'>ГЛАВНОЕ</a>
+						</h3><div class='border'>
+						<div class='ipsBox table_wrap removeDefault'>
+							<div class='ipsBox_container'>
+								<table class='ipb_table' summary="Форумы в категории 'ГЛАВНОЕ'">
+									<tr class='header hide'>
+										<th scope='col' class='col_c_icon'>&nbsp;</th>
+										<th scope='col' class='col_c_forum'>Форум</th>
+										<th scope='col' class='col_c_stats stats'>Статистика</th>
+										<th scope='col' class='col_c_post'>Последнее сообщение</th>
+									</tr>
+									<!-- / CAT HEADER -->
+									
+										<tr class='notnew forumHover'>
+																						<td class='col_c_icon'>          
+													<center><img src='http://pesway.pes6.ru/uploads/forumicons/2-icon-27459199621637a902d9c844ca59701e.png' style='opacity:0.5;filter:alpha(opacity=50)' /></center>   
+												</td>
+												<td class='col_c_forum'>
+													
+													<h4 class='forum_name'>
+														
+														<strong class='highlight_unread'><a href="http://pesway.pes6.ru/index.php/forum/2-новости-pesway/" title='Новости PESWAY'>Новости PESWAY</a></strong> 
+													</h4>
+
+													
+	
+
+													
+														<ol class='ipsList_inline ipsType_small subforums' id='subforums_2'>
+															
+																<li>
+																	<a href="http://pesway.pes6.ru/index.php/forum/9-предложения-по-улучшению/" title='Предложения по улучшению'>Предложения по улучшению</a>
+																</li>
+															
+
+																<li>
+																	<a href="http://pesway.pes6.ru/index.php/forum/1178-флудилка/" title='Флудилка'>Флудилка</a>
+																</li>
+															
+														</ol>
+													
+																					
+												</td>
+												<td class='col_c_stats ipsType_small'>
+													<ul>
+														<li>13 Тем</li>
+														<li>2 707 Ответов</li>
+													</ul>
+												</td>
+                                                <td class='col_c_post'>
+													
+														
+	<div class='left'>
+
+<img src='http://pesway.pes6.ru/public/style_images/dash/profile/default_large.png' alt='Премии клубов в конце сезона - последнее сообщение от Carlslini' class='ipsUserPhoto ipsUserPhoto_mini' />
+
+	</div>
+
+
+														<ul class='last_post ipsType_small'>
+															<li>
+																	<span class='highlight_unread'><a href='http://pesway.pes6.ru/index.php/topic/20934-премии-клубов-в-конце-сезона/' title='Премии клубов в конце сезона'>Премии клубов в конце сезона</a></span>
+																</li>
+                                                                <li>
+                                                                    <span class='desc lighter blend_links'>
+                                                                    
+                                                                        <a href='http://pesway.pes6.ru/index.php/topic/20934-премии-клубов-в-конце-сезона/?view=getlastpost' title='Просмотр последнего сообщения'>26 июн 2021</a>
+                                                                    </span>
+                                                                    
+                                                                        Автор: 
+	Carlslini
+
+                                                                    
+                                                                </li>
+															
+														</ul>
+												</td>
+											</tr>
+									
+
+										<tr class='notnew forumHover'>
+																						<td class='col_c_icon'>          
+													<center><img src='http://pesway.pes6.ru/uploads/forumicons/35-icon-e70552a5875d213e95cdb259c5a60c39.png' style='opacity:0.5;filter:alpha(opacity=50)' /></center>   
+												</td>
+												<td class='col_c_forum'>
+													
+													<h4 class='forum_name'>
+														
+														<strong class='highlight_unread'><a href="http://pesway.pes6.ru/index.php/forum/35-для-новичков/" title='Для новичков'>Для новичков</a></strong> 
+													</h4>
+
+													
+	
+
+													
+														<ol class='ipsList_inline ipsType_small subforums' id='subforums_35'>
+															
+																<li>
+																	<a href="http://pesway.pes6.ru/index.php/forum/1139-инструкция-для-игры-на-pesway/" title='Инструкция для игры на PESWAY'>Инструкция для игры на PESWAY</a>
+																</li>
+															
+														</ol>
+													
+																					
+												</td>
+												<td class='col_c_stats ipsType_small'>
+													<ul>
+														<li>1 Тем</li>
+														<li>0 Ответов</li>
+													</ul>
+												</td>
+                                                <td class='col_c_post'>
+													
+														
+	<div class='left'>
+
+<img src='http://pesway.pes6.ru/public/style_images/dash/profile/default_large.png' alt='Инструкция - последнее сообщение от Stamf' class='ipsUserPhoto ipsUserPhoto_mini' />
+
+	</div>
+
+
+														<ul class='last_post ipsType_small'>
+															<li>
+																	<span class='highlight_unread'><a href='http://pesway.pes6.ru/index.php/topic/20965-инструкция/' title='Инструкция'>Инструкция</a></span>
+																</li>
+                                                                <li>
+                                                                    <span class='desc lighter blend_links'>
+                                                                    
+                                                                        <a href='http://pesway.pes6.ru/index.php/topic/20965-инструкция/?view=getlastpost' title='Просмотр последнего сообщения'>21 апр 2021</a>
+                                                                    </span>
+                                                                    
+                                                                        Автор: 
+	Stamf
+
+                                                                    
+                                                                </li>
+															
+														</ul>
+												</td>
+											</tr>
+									
+								</table>
+							</div>
+						</div></div></div>
+						<br />
+					</div>
+			
+
+				<div id='category_124' class='category_block block_wrap'>
+						<div class='blurBox'><h3 class='maintitle'>
+							<a class='toggle right' href='#' title="Свернуть ОФОРМЛЕНИЕ РЕЗУЛЬТАТОВ">Свернуть ОФОРМЛЕНИЕ РЕЗУЛЬТАТОВ</a> <a href="http://pesway.pes6.ru/index.php/forum/124-оформление-результатов/" title='Просмотр ОФОРМЛЕНИЕ РЕЗУЛЬТАТОВ'>ОФОРМЛЕНИЕ РЕЗУЛЬТАТОВ</a>
+						</h3><div class='border'>
+						<div class='ipsBox table_wrap removeDefault'>
+							<div class='ipsBox_container'>
+								<table class='ipb_table' summary="Форумы в категории 'ОФОРМЛЕНИЕ РЕЗУЛЬТАТОВ'">
+									<tr class='header hide'>
+										<th scope='col' class='col_c_icon'>&nbsp;</th>
+										<th scope='col' class='col_c_forum'>Форум</th>
+										<th scope='col' class='col_c_stats stats'>Статистика</th>
+										<th scope='col' class='col_c_post'>Последнее сообщение</th>
+									</tr>
+									<!-- / CAT HEADER -->
+									
+										<tr class='notnew forumHover'>
+																						<td class='col_c_icon'>          
+													<center><img src='http://pesway.pes6.ru/uploads/forumicons/664-icon-6d000168b63ba5ec870793e0b6e3d6dc.png' style='opacity:0.5;filter:alpha(opacity=50)' /></center>   
+												</td>
+												<td class='col_c_forum'>
+													
+													<h4 class='forum_name'>
+														
+														<strong class='highlight_unread'><a href="http://pesway.pes6.ru/index.php/forum/664-english-premier-league/" title='English Premier League'>English Premier League</a></strong> 
+													</h4>
+
+													
+	
+
+													
+														<ol class='ipsList_inline ipsType_small subforums' id='subforums_664'>
+															
+																<li>
+																	<a href="http://pesway.pes6.ru/index.php/forum/672-emirates-fa-cup/" title='Emirates FA Cup'>Emirates FA Cup</a>
+																</li>
+															
+
+																<li>
+																	<a href="http://pesway.pes6.ru/index.php/forum/671-fa-community-shield/" title='FA Community Shield'>FA Community Shield</a>
+																</li>
+															
+
+																<li>
+																	<a href="http://pesway.pes6.ru/index.php/forum/1191-список-тренеров/" title='Список тренеров'>Список тренеров</a>
+																</li>
+															
+														</ol>
+													
+																					
+												</td>
+												<td class='col_c_stats ipsType_small'>
+													<ul>
+														<li>13 Тем</li>
+														<li>111 Ответов</li>
+													</ul>
+												</td>
+                                                <td class='col_c_post'>
+													
+														
+	<div class='left'>
+
+<img src='http://pesway.pes6.ru/uploads/profile/photo-thumb-1563.png?_r=1615447252' alt='7 неделя [16-18 тур] - последнее сообщение от sjva' class='ipsUserPhoto ipsUserPhoto_mini' />
+
+	</div>
+
+
+														<ul class='last_post ipsType_small'>
+															<li>
+																	<span class='highlight_unread'><a href='http://pesway.pes6.ru/index.php/topic/20987-7-неделя-16-18-тур/' title='7 неделя [16-18 тур]'>7 неделя [16-18 тур]</a></span>
+																</li>
+                                                                <li>
+                                                                    <span class='desc lighter blend_links'>
+                                                                    
+                                                                        <a href='http://pesway.pes6.ru/index.php/topic/20987-7-неделя-16-18-тур/?view=getlastpost' title='Просмотр последнего сообщения'>11 мая 2021</a>
+                                                                    </span>
+                                                                    
+                                                                        Автор: 
+	sjva
+
+                                                                    
+                                                                </li>
+															
+														</ul>
+												</td>
+											</tr>
+									
+
+										<tr class='notnew forumHover'>
+																						<td class='col_c_icon'>          
+													<center><img src='http://pesway.pes6.ru/uploads/forumicons/665-icon-ba60448973b6ac40aa781afb2535bdaa.png' style='opacity:0.5;filter:alpha(opacity=50)' /></center>   
+												</td>
+												<td class='col_c_forum'>
+													
+													<h4 class='forum_name'>
+														
+														<strong class='highlight_unread'><a href="http://pesway.pes6.ru/index.php/forum/665-la-liga/" title='La Liga'>La Liga</a></strong> 
+													</h4>
+
+													
+	
+
+													
+														<ol class='ipsList_inline ipsType_small subforums' id='subforums_665'>
+															
+																<li>
+																	<a href="http://pesway.pes6.ru/index.php/forum/673-copa-del-rey/" title='Copa del Rey'>Copa del Rey</a>
+																</li>
+															
+
+																<li>
+																	<a href="http://pesway.pes6.ru/index.php/forum/674-supercopa-de-espana/" title='Supercopa de Espana'>Supercopa de Espana</a>
+																</li>
+															
+
+																<li>
+																	<a href="http://pesway.pes6.ru/index.php/forum/1190-список-тренеров/" title='Список тренеров'>Список тренеров</a>
+																</li>
+															
+														</ol>
+													
+																					
+												</td>
+												<td class='col_c_stats ipsType_small'>
+													<ul>
+														<li>13 Тем</li>
+														<li>103 Ответов</li>
+													</ul>
+												</td>
+                                                <td class='col_c_post'>
+													
+														
+	<div class='left'>
+
+<img src='http://pesway.pes6.ru/public/style_images/dash/profile/default_large.png' alt='7 неделя [16-18 тур] - последнее сообщение от GerardoLot' class='ipsUserPhoto ipsUserPhoto_mini' />
+
+	</div>
+
+
+														<ul class='last_post ipsType_small'>
+															<li>
+																	<span class='highlight_unread'><a href='http://pesway.pes6.ru/index.php/topic/20988-7-неделя-16-18-тур/' title='7 неделя [16-18 тур]'>7 неделя [16-18 тур]</a></span>
+																</li>
+                                                                <li>
+                                                                    <span class='desc lighter blend_links'>
+                                                                    
+                                                                        <a href='http://pesway.pes6.ru/index.php/topic/20988-7-неделя-16-18-тур/?view=getlastpost' title='Просмотр последнего сообщения'>07 июл 2021</a>
+                                                                    </span>
+                                                                    
+                                                                        Автор: 
+	GerardoLot
+
+                                                                    
+                                                                </li>
+															
+														</ul>
+												</td>
+											</tr>
+									
+
+										<tr class='notnew forumHover'>
+																						<td class='col_c_icon'>          
+													<center><img src='http://pesway.pes6.ru/uploads/forumicons/666-icon-a26595ddeb283e1e2a350eebfc447a52.png' style='opacity:0.5;filter:alpha(opacity=50)' /></center>   
+												</td>
+												<td class='col_c_forum'>
+													
+													<h4 class='forum_name'>
+														
+														<strong class='highlight_unread'><a href="http://pesway.pes6.ru/index.php/forum/666-serie-a-tim/" title='Serie A TIM'>Serie A TIM</a></strong> 
+													</h4>
+
+													
+	
+
+													
+														<ol class='ipsList_inline ipsType_small subforums' id='subforums_666'>
+															
+																<li>
+																	<a href="http://pesway.pes6.ru/index.php/forum/675-serie-a-tim-cup/" title='Serie A TIM Cup'>Serie A TIM Cup</a>
+																</li>
+															
+
+																<li>
+																	<a href="http://pesway.pes6.ru/index.php/forum/676-supercoppa-italiana/" title='Supercoppa Italiana'>Supercoppa Italiana</a>
+																</li>
+															
+
+																<li>
+																	<a href="http://pesway.pes6.ru/index.php/forum/1189-список-тренеров/" title='Список тренеров'>Список тренеров</a>
+																</li>
+															
+														</ol>
+													
+																					
+												</td>
+												<td class='col_c_stats ipsType_small'>
+													<ul>
+														<li>13 Тем</li>
+														<li>112 Ответов</li>
+													</ul>
+												</td>
+                                                <td class='col_c_post'>
+													
+														
+	<div class='left'>
+
+<img src='http://pesway.pes6.ru/public/style_images/dash/profile/default_large.png' alt='6 неделя [13-15 тур] - последнее сообщение от Stamf' class='ipsUserPhoto ipsUserPhoto_mini' />
+
+	</div>
+
+
+														<ul class='last_post ipsType_small'>
+															<li>
+																	<span class='highlight_unread'><a href='http://pesway.pes6.ru/index.php/topic/20978-6-неделя-13-15-тур/' title='6 неделя [13-15 тур]'>6 неделя [13-15 тур]</a></span>
+																</li>
+                                                                <li>
+                                                                    <span class='desc lighter blend_links'>
+                                                                    
+                                                                        <a href='http://pesway.pes6.ru/index.php/topic/20978-6-неделя-13-15-тур/?view=getlastpost' title='Просмотр последнего сообщения'>17 мая 2021</a>
+                                                                    </span>
+                                                                    
+                                                                        Автор: 
+	Stamf
+
+                                                                    
+                                                                </li>
+															
+														</ul>
+												</td>
+											</tr>
+									
+
+										<tr class='notnew forumHover'>
+																						<td class='col_c_icon'>          
+													<center><img src='http://pesway.pes6.ru/uploads/forumicons/667-icon-7b0b8890c891ba2001a36096c4fe56b9.png' style='opacity:0.5;filter:alpha(opacity=50)' /></center>   
+												</td>
+												<td class='col_c_forum'>
+													
+													<h4 class='forum_name'>
+														
+														<strong class='highlight_unread'><a href="http://pesway.pes6.ru/index.php/forum/667-superliga/" title='SuperLiga'>SuperLiga</a></strong> 
+													</h4>
+
+													
+	
+
+													
+														<ol class='ipsList_inline ipsType_small subforums' id='subforums_667'>
+															
+																<li>
+																	<a href="http://pesway.pes6.ru/index.php/forum/677-superliga-cup/" title='SuperLiga Cup'>SuperLiga Cup</a>
+																</li>
+															
+
+																<li>
+																	<a href="http://pesway.pes6.ru/index.php/forum/678-sl-supercup/" title='SL-Supercup'>SL-Supercup</a>
+																</li>
+															
+
+																<li>
+																	<a href="http://pesway.pes6.ru/index.php/forum/1192-список-тренеров/" title='Список тренеров'>Список тренеров</a>
+																</li>
+															
+														</ol>
+													
+																					
+												</td>
+												<td class='col_c_stats ipsType_small'>
+													<ul>
+														<li>13 Тем</li>
+														<li>115 Ответов</li>
+													</ul>
+												</td>
+                                                <td class='col_c_post'>
+													
+														
+	<div class='left'>
+
+<img src='http://pesway.pes6.ru/public/style_images/dash/profile/default_large.png' alt='Обсуждение лиги - последнее сообщение от proflinkflits' class='ipsUserPhoto ipsUserPhoto_mini' />
+
+	</div>
+
+
+														<ul class='last_post ipsType_small'>
+															<li>
+																	<span class='highlight_unread'><a href='http://pesway.pes6.ru/index.php/topic/20753-обсуждение-лиги/' title='Обсуждение лиги'>Обсуждение лиги</a></span>
+																</li>
+                                                                <li>
+                                                                    <span class='desc lighter blend_links'>
+                                                                    
+                                                                        <a href='http://pesway.pes6.ru/index.php/topic/20753-обсуждение-лиги/?view=getlastpost' title='Просмотр последнего сообщения'>27 июн 2021</a>
+                                                                    </span>
+                                                                    
+                                                                        Автор: 
+	proflinkflits
+
+                                                                    
+                                                                </li>
+															
+														</ul>
+												</td>
+											</tr>
+									
+
+										<tr class='notnew forumHover'>
+																						<td class='col_c_icon'>          
+													<center><img src='http://pesway.pes6.ru/uploads/forumicons/1209-icon-6c6691d6121797ce508c4f80f92c5c98.png' style='opacity:0.5;filter:alpha(opacity=50)' /></center>   
+												</td>
+												<td class='col_c_forum'>
+													
+													<h4 class='forum_name'>
+														
+														<strong class='highlight_unread'><a href="http://pesway.pes6.ru/index.php/forum/1209-еврокубки/" title='Еврокубки'>Еврокубки</a></strong> 
+													</h4>
+
+													
+	
+
+													
+														<ol class='ipsList_inline ipsType_small subforums' id='subforums_1209'>
+															
+																<li>
+																	<a href="http://pesway.pes6.ru/index.php/forum/1210-uefa-champions-league/" title='UEFA Champions League'>UEFA Champions League</a>
+																</li>
+															
+
+																<li>
+																	<a href="http://pesway.pes6.ru/index.php/forum/1211-uefa-europa-league/" title='UEFA Europa League'>UEFA Europa League</a>
+																</li>
+															
+
+																<li>
+																	<a href="http://pesway.pes6.ru/index.php/forum/1212-uefa-super-cup/" title='UEFA Super Cup '>UEFA Super Cup </a>
+																</li>
+															
+														</ol>
+													
+																					
+												</td>
+												<td class='col_c_stats ipsType_small'>
+													<ul>
+														<li>0 Тем</li>
+														<li>0 Ответов</li>
+													</ul>
+												</td>
+                                                <td class='col_c_post'>
+													
+														
+	<div class='left'>
+
+
+	<img src='http://pesway.pes6.ru/public/style_images/dash/profile/default_large.png' width='25' height='25' class='ipsUserPhoto ipsUserPhoto_mini' />
+
+
+	</div>
+
+
+														<ul class='last_post ipsType_small'>
+															
+																<li class='desc lighter'><em>Нет сообщений для просмотра</em></li>
+															
+															
+														</ul>
+												</td>
+											</tr>
+									
+
+										<tr class='notnew forumHover'>
+																						<td class='col_c_icon'>          
+													<center><img src='http://pesway.pes6.ru/uploads/forumicons/1206-icon-a83f378462d13e9c2074e7a75a0381ee.png' style='opacity:0.5;filter:alpha(opacity=50)' /></center>   
+												</td>
+												<td class='col_c_forum'>
+													
+													<h4 class='forum_name'>
+														
+														<strong class='highlight_unread'><a href="http://pesway.pes6.ru/index.php/forum/1206-турниры-сборных/" title='Турниры сборных'>Турниры сборных</a></strong> 
+													</h4>
+
+													
+	
+
+													
+														<ol class='ipsList_inline ipsType_small subforums' id='subforums_1206'>
+															
+																<li>
+																	<a href="http://pesway.pes6.ru/index.php/forum/1207-fifa-world-cup/" title='FIFA World Cup'>FIFA World Cup</a>
+																</li>
+															
+
+																<li>
+																	<a href="http://pesway.pes6.ru/index.php/forum/1208-uefa-euro-2021/" title='UEFA Euro 2021'>UEFA Euro 2021</a>
+																</li>
+															
+														</ol>
+													
+																					
+												</td>
+												<td class='col_c_stats ipsType_small'>
+													<ul>
+														<li>0 Тем</li>
+														<li>0 Ответов</li>
+													</ul>
+												</td>
+                                                <td class='col_c_post'>
+													
+														
+	<div class='left'>
+
+
+	<img src='http://pesway.pes6.ru/public/style_images/dash/profile/default_large.png' width='25' height='25' class='ipsUserPhoto ipsUserPhoto_mini' />
+
+
+	</div>
+
+
+														<ul class='last_post ipsType_small'>
+															
+																<li class='desc lighter'><em>Нет сообщений для просмотра</em></li>
+															
+															
+														</ul>
+												</td>
+											</tr>
+									
+
+										<tr class='notnew forumHover'>
+																						<td class='col_c_icon'>          
+													<center><img src='http://pesway.pes6.ru/uploads/forumicons/20-icon-95f72503ecbe9d09700c04c74f5ee6b6.png' style='opacity:0.5;filter:alpha(opacity=50)' /></center>   
+												</td>
+												<td class='col_c_forum'>
+													
+													<h4 class='forum_name'>
+														
+														<strong class='highlight_unread'><a href="http://pesway.pes6.ru/index.php/forum/20-товарищеские-турниры/" title='Товарищеские турниры '>Товарищеские турниры </a></strong> 
+													</h4>
+
+													
+	
+
+													
+																					
+												</td>
+												<td class='col_c_stats ipsType_small'>
+													<ul>
+														<li>2 Тем</li>
+														<li>108 Ответов</li>
+													</ul>
+												</td>
+                                                <td class='col_c_post'>
+													
+														
+	<div class='left'>
+
+<img src='http://pesway.pes6.ru/public/style_images/dash/profile/default_large.png' alt='Тов - последнее сообщение от dzenin' class='ipsUserPhoto ipsUserPhoto_mini' />
+
+	</div>
+
+
+														<ul class='last_post ipsType_small'>
+															<li>
+																	<span class='highlight_unread'><a href='http://pesway.pes6.ru/index.php/topic/20990-тов/' title='Тов'>Тов</a></span>
+																</li>
+                                                                <li>
+                                                                    <span class='desc lighter blend_links'>
+                                                                    
+                                                                        <a href='http://pesway.pes6.ru/index.php/topic/20990-тов/?view=getlastpost' title='Просмотр последнего сообщения'>Вчера, 01:37:56</a>
+                                                                    </span>
+                                                                    
+                                                                        Автор: 
+	dzenin
+
+                                                                    
+                                                                </li>
+															
+														</ul>
+												</td>
+											</tr>
+									
+								</table>
+							</div>
+						</div></div></div>
+						<br />
+					</div>
+			
+
+				<div id='category_15' class='category_block block_wrap'>
+						<div class='blurBox'><h3 class='maintitle'>
+							<a class='toggle right' href='#' title="Свернуть ФИНАНСЫ И ТРАНСФЕРНОЕ ОКНО">Свернуть ФИНАНСЫ И ТРАНСФЕРНОЕ ОКНО</a> <a href="http://pesway.pes6.ru/index.php/forum/15-финансы-и-трансферное-окно/" title='Просмотр ФИНАНСЫ И ТРАНСФЕРНОЕ ОКНО'>ФИНАНСЫ И ТРАНСФЕРНОЕ ОКНО</a>
+						</h3><div class='border'>
+						<div class='ipsBox table_wrap removeDefault'>
+							<div class='ipsBox_container'>
+								<table class='ipb_table' summary="Форумы в категории 'ФИНАНСЫ И ТРАНСФЕРНОЕ ОКНО'">
+									<tr class='header hide'>
+										<th scope='col' class='col_c_icon'>&nbsp;</th>
+										<th scope='col' class='col_c_forum'>Форум</th>
+										<th scope='col' class='col_c_stats stats'>Статистика</th>
+										<th scope='col' class='col_c_post'>Последнее сообщение</th>
+									</tr>
+									<!-- / CAT HEADER -->
+									
+										<tr class='notnew forumHover'>
+																						<td class='col_c_icon'>          
+													<center><img src='http://pesway.pes6.ru/uploads/forumicons/62-icon-470a096d731d9561d024f13bf86d1cd4.png' style='opacity:0.5;filter:alpha(opacity=50)' /></center>   
+												</td>
+												<td class='col_c_forum'>
+													
+													<h4 class='forum_name'>
+														
+														<strong class='highlight_unread'><a href="http://pesway.pes6.ru/index.php/forum/62-финансы/" title='Финансы'>Финансы</a></strong> 
+													</h4>
+
+													
+	
+
+													
+														<ol class='ipsList_inline ipsType_small subforums' id='subforums_62'>
+															
+																<li>
+																	<a href="http://pesway.pes6.ru/index.php/forum/1140-бюджеты-клубов/" title='Бюджеты клубов'>Бюджеты клубов</a>
+																</li>
+															
+
+																<li>
+																	<a href="http://pesway.pes6.ru/index.php/forum/1129-цели-клубов-на-сезон/" title='Цели клубов на сезон'>Цели клубов на сезон</a>
+																</li>
+															
+
+																<li>
+																	<a href="http://pesway.pes6.ru/index.php/forum/1157-премии-клубов/" title='Премии клубов'>Премии клубов</a>
+																</li>
+															
+
+																<li>
+																	<a href="http://pesway.pes6.ru/index.php/forum/1137-штрафы/" title='Штрафы'>Штрафы</a>
+																</li>
+															
+
+																<li>
+																	<a href="http://pesway.pes6.ru/index.php/forum/63-продление-контрактов/" title='Продление контрактов'>Продление контрактов</a>
+																</li>
+															
+														</ol>
+													
+																					
+												</td>
+												<td class='col_c_stats ipsType_small'>
+													<ul>
+														<li>5 Тем</li>
+														<li>6 Ответов</li>
+													</ul>
+												</td>
+                                                <td class='col_c_post'>
+													
+														
+	<div class='left'>
+
+<img src='http://pesway.pes6.ru/public/style_images/dash/profile/default_large.png' alt='Штрафы [сезон №1 / второй к... - последнее сообщение от Stamf' class='ipsUserPhoto ipsUserPhoto_mini' />
+
+	</div>
+
+
+														<ul class='last_post ipsType_small'>
+															<li>
+																	<span class='highlight_unread'><a href='http://pesway.pes6.ru/index.php/topic/20974-штрафы-сезон-№1-второй-круг/' title='Штрафы [сезон №1 / второй круг]'>Штрафы [сезон №1 / второй к...</a></span>
+																</li>
+                                                                <li>
+                                                                    <span class='desc lighter blend_links'>
+                                                                    
+                                                                        <a href='http://pesway.pes6.ru/index.php/topic/20974-штрафы-сезон-№1-второй-круг/?view=getlastpost' title='Просмотр последнего сообщения'>26 апр 2021</a>
+                                                                    </span>
+                                                                    
+                                                                        Автор: 
+	Stamf
+
+                                                                    
+                                                                </li>
+															
+														</ul>
+												</td>
+											</tr>
+									
+
+										<tr class='notnew forumHover'>
+																						<td class='col_c_icon'>          
+													<center><img src='http://pesway.pes6.ru/uploads/forumicons/1200-icon-2391bd95aba881e7855af371b7cc28a5.png' style='opacity:0.5;filter:alpha(opacity=50)' /></center>   
+												</td>
+												<td class='col_c_forum'>
+													
+													<h4 class='forum_name'>
+														
+														<strong class='highlight_unread'><a href="http://pesway.pes6.ru/index.php/forum/1200-трансферное-окно-10/" title='Трансферное окно [1.0]'>Трансферное окно [1.0]</a></strong> 
+													</h4>
+
+													
+	
+
+													
+														<ol class='ipsList_inline ipsType_small subforums' id='subforums_1200'>
+															
+																<li>
+																	<a href="http://pesway.pes6.ru/index.php/forum/1201-регламент-то/" title='Регламент ТО '>Регламент ТО </a>
+																</li>
+															
+
+																<li>
+																	<a href="http://pesway.pes6.ru/index.php/forum/1202-куплюпродам/" title='Куплю/Продам '>Куплю/Продам </a>
+																</li>
+															
+
+																<li>
+																	<a href="http://pesway.pes6.ru/index.php/forum/1203-оформление-трансферов-10/" title='Оформление трансферов [1.0]'>Оформление трансферов [1.0]</a>
+																</li>
+															
+														</ol>
+													
+																					
+												</td>
+												<td class='col_c_stats ipsType_small'>
+													<ul>
+														<li>3 Тем</li>
+														<li>0 Ответов</li>
+													</ul>
+												</td>
+                                                <td class='col_c_post'>
+													
+														
+	<div class='left'>
+
+<img src='http://pesway.pes6.ru/uploads/profile/photo-thumb-1535.jpg?_r=1509072018' alt='Правила - последнее сообщение от Khabi' class='ipsUserPhoto ipsUserPhoto_mini' />
+
+	</div>
+
+
+														<ul class='last_post ipsType_small'>
+															<li>
+																	<span class='highlight_unread'><a href='http://pesway.pes6.ru/index.php/topic/20855-правила/' title='Правила'>Правила</a></span>
+																</li>
+                                                                <li>
+                                                                    <span class='desc lighter blend_links'>
+                                                                    
+                                                                        <a href='http://pesway.pes6.ru/index.php/topic/20855-правила/?view=getlastpost' title='Просмотр последнего сообщения'>14 апр 2021</a>
+                                                                    </span>
+                                                                    
+                                                                        Автор: 
+	Khabi
+
+                                                                    
+                                                                </li>
+															
+														</ul>
+												</td>
+											</tr>
+									
+								</table>
+							</div>
+						</div></div></div>
+						<br />
+					</div>
+			
+
+				<div id='category_1145' class='category_block block_wrap'>
+						<div class='blurBox'><h3 class='maintitle'>
+							<a class='toggle right' href='#' title="Свернуть СМИ И ЖУРНАЛИСТИКА">Свернуть СМИ И ЖУРНАЛИСТИКА</a> <a href="http://pesway.pes6.ru/index.php/forum/1145-сми-и-журналистика/" title='Просмотр СМИ И ЖУРНАЛИСТИКА'>СМИ И ЖУРНАЛИСТИКА</a>
+						</h3><div class='border'>
+						<div class='ipsBox table_wrap removeDefault'>
+							<div class='ipsBox_container'>
+								<table class='ipb_table' summary="Форумы в категории 'СМИ И ЖУРНАЛИСТИКА'">
+									<tr class='header hide'>
+										<th scope='col' class='col_c_icon'>&nbsp;</th>
+										<th scope='col' class='col_c_forum'>Форум</th>
+										<th scope='col' class='col_c_stats stats'>Статистика</th>
+										<th scope='col' class='col_c_post'>Последнее сообщение</th>
+									</tr>
+									<!-- / CAT HEADER -->
+									
+										<tr class='notnew forumHover'>
+																						<td class='col_c_icon'>          
+													<center><img src='http://pesway.pes6.ru/uploads/forumicons/261-icon-5d4fa741532fe5d328193d9a3e086dd4.jpg' style='opacity:0.5;filter:alpha(opacity=50)' /></center>   
+												</td>
+												<td class='col_c_forum'>
+													
+													<h4 class='forum_name'>
+														
+														<strong class='highlight_unread'><a href="http://pesway.pes6.ru/index.php/forum/261-pesway-tv/" title='PESWAY TV'>PESWAY TV</a></strong> 
+													</h4>
+
+													
+	
+
+													
+														<ol class='ipsList_inline ipsType_small subforums' id='subforums_261'>
+															
+																<li>
+																	<a href="http://pesway.pes6.ru/index.php/forum/1165-modern-times/" title='Modern Times'>Modern Times</a>
+																</li>
+															
+
+																<li>
+																	<a href="http://pesway.pes6.ru/index.php/forum/1168-правила-pesway-tv/" title='Правила PESWAY TV'>Правила PESWAY TV</a>
+																</li>
+															
+
+																<li>
+																	<a href="http://pesway.pes6.ru/index.php/forum/1169-памятка-для-комментатора/" title='Памятка для комментатора '>Памятка для комментатора </a>
+																</li>
+															
+
+																<li>
+																	<a href="http://pesway.pes6.ru/index.php/forum/1170-записи-стримов/" title='Записи стримов'>Записи стримов</a>
+																</li>
+															
+
+																<li>
+																	<a href="http://pesway.pes6.ru/index.php/forum/1184-ваши-блоги/" title='Ваши блоги'>Ваши блоги</a>
+																</li>
+															
+														</ol>
+													
+																					
+												</td>
+												<td class='col_c_stats ipsType_small'>
+													<ul>
+														<li>128 Тем</li>
+														<li>3 908 Ответов</li>
+													</ul>
+												</td>
+                                                <td class='col_c_post'>
+													
+														
+	<div class='left'>
+
+<img src='http://pesway.pes6.ru/public/style_images/dash/profile/default_large.png' alt='Записи стримов - последнее сообщение от DerekBaf' class='ipsUserPhoto ipsUserPhoto_mini' />
+
+	</div>
+
+
+														<ul class='last_post ipsType_small'>
+															<li>
+																	<span class='highlight_unread'><a href='http://pesway.pes6.ru/index.php/topic/13225-записи-стримов/' title='Записи стримов'>Записи стримов</a></span>
+																</li>
+                                                                <li>
+                                                                    <span class='desc lighter blend_links'>
+                                                                    
+                                                                        <a href='http://pesway.pes6.ru/index.php/topic/13225-записи-стримов/?view=getlastpost' title='Просмотр последнего сообщения'>18 июн 2021</a>
+                                                                    </span>
+                                                                    
+                                                                        Автор: 
+	DerekBaf
+
+                                                                    
+                                                                </li>
+															
+														</ul>
+												</td>
+											</tr>
+									
+
+										<tr class='notnew forumHover'>
+																						<td class='col_c_icon'>          
+													<center><img src='http://pesway.pes6.ru/uploads/forumicons/11-icon-c548c9575d94607267179c53aadad766.jpg' style='opacity:0.5;filter:alpha(opacity=50)' /></center>   
+												</td>
+												<td class='col_c_forum'>
+													
+													<h4 class='forum_name'>
+														
+														<strong class='highlight_unread'><a href="http://pesway.pes6.ru/index.php/forum/11-награды-сезона/" title='Награды сезона'>Награды сезона</a></strong> 
+													</h4>
+
+													
+	
+
+													
+														<ol class='ipsList_inline ipsType_small subforums' id='subforums_11'>
+															
+																<li>
+																	<a href="http://pesway.pes6.ru/index.php/forum/329-золотой-мяч-№1/" title='Золотой мяч [№1]'>Золотой мяч [№1]</a>
+																</li>
+															
+
+																<li>
+																	<a href="http://pesway.pes6.ru/index.php/forum/12-тренер-сезона-№1/" title='Тренер сезона [№1]'>Тренер сезона [№1]</a>
+																</li>
+															
+
+																<li>
+																	<a href="http://pesway.pes6.ru/index.php/forum/1188-золотая-бутса-№1/" title='Золотая бутса [№1]'>Золотая бутса [№1]</a>
+																</li>
+															
+
+																<li>
+																	<a href="http://pesway.pes6.ru/index.php/forum/382-комментатор-сезона-№1/" title='Комментатор сезона [№1]'>Комментатор сезона [№1]</a>
+																</li>
+															
+														</ol>
+													
+																					
+												</td>
+												<td class='col_c_stats ipsType_small'>
+													<ul>
+														<li>1 Тем</li>
+														<li>0 Ответов</li>
+													</ul>
+												</td>
+                                                <td class='col_c_post'>
+													
+														
+	<div class='left'>
+
+<img src='http://pesway.pes6.ru/public/style_images/dash/profile/default_large.png' alt='Правила - последнее сообщение от Stamf' class='ipsUserPhoto ipsUserPhoto_mini' />
+
+	</div>
+
+
+														<ul class='last_post ipsType_small'>
+															<li>
+																	<span class='highlight_unread'><a href='http://pesway.pes6.ru/index.php/topic/20959-правила/' title='Правила'>Правила</a></span>
+																</li>
+                                                                <li>
+                                                                    <span class='desc lighter blend_links'>
+                                                                    
+                                                                        <a href='http://pesway.pes6.ru/index.php/topic/20959-правила/?view=getlastpost' title='Просмотр последнего сообщения'>20 апр 2021</a>
+                                                                    </span>
+                                                                    
+                                                                        Автор: 
+	Stamf
+
+                                                                    
+                                                                </li>
+															
+														</ul>
+												</td>
+											</tr>
+									
+								</table>
+							</div>
+						</div></div></div>
+						<br />
+					</div>
+			
+		
+	</div>
+	<div id='index_stats' class='ipsLayout_right clearfix' >
+			<div class='ipsSideBlock'>
+	<h3><img src='http://pesway.pes6.ru/public/style_images/dash/comment_new.png' alt='' /> Последние сообщения</h3>
+    <div class='_sbcollapsable'>
+		
+            <div class='ipsBox_container ipsPad'>
+            <a href='http://pesway.pes6.ru/index.php/topic/20990-тов/?view=getnewpost'><b>Тов</b></a> <a href='http://pesway.pes6.ru/index.php/topic/20990-тов/?view=getlastpost' title='Просмотр последнего сообщения'></a>
+            <br/>
+            
+            Форум: <a href='http://pesway.pes6.ru/index.php/forum/20-товарищеские-турниры/'>Товарищеские турниры </a>
+            <br/>
+            
+            
+            
+            
+            
+            Последний ответ: dzenin&nbsp;<span class='date'>(Вчера, 01:37:56)</span>
+            <br/>
+            
+            
+            </div>
+		
+
+            <div class='ipsBox_container ipsPad'>
+            <a href='http://pesway.pes6.ru/index.php/topic/47-avatary/?view=getnewpost'><b>Аватары</b></a> <a href='http://pesway.pes6.ru/index.php/topic/47-avatary/?view=getlastpost' title='Просмотр последнего сообщения'></a>
+            <br/>
+            
+            Форум: <a href='http://pesway.pes6.ru/index.php/forum/1164-остальное/'>Остальное</a>
+            <br/>
+            
+            
+            
+            
+            
+            Последний ответ: Andreywrera&nbsp;<span class='date'>(07 июл 2021 19:51:32)</span>
+            <br/>
+            
+            
+            </div>
+		
+
+            <div class='ipsBox_container ipsPad'>
+            <a href='http://pesway.pes6.ru/index.php/topic/20988-7-неделя-16-18-тур/?view=getnewpost'><b>7 неделя [16-18 тур]</b></a> <a href='http://pesway.pes6.ru/index.php/topic/20988-7-неделя-16-18-тур/?view=getlastpost' title='Просмотр последнего сообщения'></a>
+            <br/>
+            
+            Форум: <a href='http://pesway.pes6.ru/index.php/forum/665-la-liga/'>La Liga</a>
+            <br/>
+            
+            
+            
+            
+            
+            Последний ответ: GerardoLot&nbsp;<span class='date'>(07 июл 2021 14:12:42)</span>
+            <br/>
+            
+            
+            </div>
+		
+
+            <div class='ipsBox_container ipsPad'>
+            <a href='http://pesway.pes6.ru/index.php/topic/30-player-gdb-manager-17/?view=getnewpost'><b>Player GDB Manager 1.7</b></a> <a href='http://pesway.pes6.ru/index.php/topic/30-player-gdb-manager-17/?view=getlastpost' title='Просмотр последнего сообщения'></a>
+            <br/>
+            
+            Форум: <a href='http://pesway.pes6.ru/index.php/forum/1162-программы/'>Программы</a>
+            <br/>
+            
+            
+            
+            
+            
+            Последний ответ: Obuwikc&nbsp;<span class='date'>(03 июл 2021 11:58:44)</span>
+            <br/>
+            
+            
+            </div>
+		
+
+            <div class='ipsBox_container ipsPad'>
+            <a href='http://pesway.pes6.ru/index.php/topic/32-pes-6-keygen/?view=getnewpost'><b>PES 6 Keygen</b></a> <a href='http://pesway.pes6.ru/index.php/topic/32-pes-6-keygen/?view=getlastpost' title='Просмотр последнего сообщения'></a>
+            <br/>
+            
+            Форум: <a href='http://pesway.pes6.ru/index.php/forum/1162-программы/'>Программы</a>
+            <br/>
+            
+            
+            
+            
+            
+            Последний ответ: Obuwikc&nbsp;<span class='date'>(03 июл 2021 10:42:53)</span>
+            <br/>
+            
+            
+            </div>
+		
+   </div>
+</div>
+<br /><div class='ipsSideBlock clearfix'>
+	<h3 class='csbNoCollapse'><img src='http://pesway.pes6.ru/public/style_images/dash/vk.png' alt='Иконка' /> ВКонтакте</h3>
+	<div class='_sbcollapsable'>
+		<script type="text/javascript" src="https://vk.com/js/api/openapi.js?162"></script>
+
+<!-- VK Widget -->
+<div id="vk_groups"></div>
+<script type="text/javascript">
+VK.Widgets.Group("vk_groups", {mode: 4, width: "250", height: "400"}, 183133360);
+</script>
+	</div>
+</div>
+<div class='ipsSideBlock clearfix'>
+	<h3>Лидеры лайков</h3>
+	<div class='_sbcollapsable'>
+		<ul class='ipsList_withminiphoto'>
+		
+		<li class='clearfix'>
+					
+				</p>
+
+			
+				<a href='http://pesway.pes6.ru/index.php/user/1525-pastor/' title='Просмотр профиля' class='ipsUserPhotoLink'>
+			
+			<img src='http://pesway.pes6.ru/uploads/profile/photo-thumb-1525.png?_r=1557489117' alt="Фотография pastor" class='ipsUserPhoto ipsUserPhoto_mini left'/>
+			
+				</a>
+			
+<div class='list_content'>
+				<p class='desc ipsType_smaller'>
+					
+	pastor
+
+
+</p>
+</div>
+<div class='list_content'><p class='desc ipsType_smaller'>Лайки:  8 157
+                                 </p></div>
+		</li>
+		
+
+		<li class='clearfix'>
+					
+				</p>
+
+			
+				<a href='http://pesway.pes6.ru/index.php/user/1562-nike/' title='Просмотр профиля' class='ipsUserPhotoLink'>
+			
+			<img src='http://pesway.pes6.ru/public/style_images/dash/profile/default_large.png' alt="Фотография Nike" class='ipsUserPhoto ipsUserPhoto_mini left'/>
+			
+				</a>
+			
+<div class='list_content'>
+				<p class='desc ipsType_smaller'>
+					
+	Nike
+
+
+</p>
+</div>
+<div class='list_content'><p class='desc ipsType_smaller'>Лайки:  8 045
+                                 </p></div>
+		</li>
+		
+
+		<li class='clearfix'>
+					
+				</p>
+
+			
+				<a href='http://pesway.pes6.ru/index.php/user/1-sting/' title='Просмотр профиля' class='ipsUserPhotoLink'>
+			
+			<img src='http://pesway.pes6.ru/uploads/profile/photo-thumb-1.jpg?_r=1586343206' alt="Фотография Sting" class='ipsUserPhoto ipsUserPhoto_mini left'/>
+			
+				</a>
+			
+<div class='list_content'>
+				<p class='desc ipsType_smaller'>
+					
+	Sting
+
+
+</p>
+</div>
+<div class='list_content'><p class='desc ipsType_smaller'>Лайки:  6 008
+                                 </p></div>
+		</li>
+		
+
+		<li class='clearfix'>
+					
+				</p>
+
+			
+				<a href='http://pesway.pes6.ru/index.php/user/97-dimasik/' title='Просмотр профиля' class='ipsUserPhotoLink'>
+			
+			<img src='http://pesway.pes6.ru/uploads/profile/photo-thumb-97.png?_r=1406547960' alt="Фотография dimasik" class='ipsUserPhoto ipsUserPhoto_mini left'/>
+			
+				</a>
+			
+<div class='list_content'>
+				<p class='desc ipsType_smaller'>
+					
+	dimasik
+
+
+</p>
+</div>
+<div class='list_content'><p class='desc ipsType_smaller'>Лайки:  3 128
+                                 </p></div>
+		</li>
+		
+
+		<li class='clearfix'>
+					
+				</p>
+
+			
+				<a href='http://pesway.pes6.ru/index.php/user/31-vollirik/' title='Просмотр профиля' class='ipsUserPhotoLink'>
+			
+			<img src='http://pesway.pes6.ru/uploads/profile/photo-thumb-31.jpg?_r=1555020380' alt="Фотография vollirik" class='ipsUserPhoto ipsUserPhoto_mini left'/>
+			
+				</a>
+			
+<div class='list_content'>
+				<p class='desc ipsType_smaller'>
+					
+	vollirik
+
+
+</p>
+</div>
+<div class='list_content'><p class='desc ipsType_smaller'>Лайки:  2 692
+                                 </p></div>
+		</li>
+		
+		</ul>
+	</div>
+</div>
+		</div>
+		<a href='#' id='toggle_sidebar' title='' data-closed="&laquo;" data-open="&times;">&nbsp;</a>
+</div>
+<script type='text/javascript'>
+//<![CDATA[
+	var markerURL  = ipb.vars['base_url'] + "app=forums&module=ajax&section=markasread&i=1"; // Ajax URL so don't use &amp;
+	var unreadIcon = "<img src='http://pesway.pes6.ru/public/style_images/dash/f_icon_read.png' />";
+	
+	
+		
+			
+				
+					
+				
+
+					
+				
+			
+		
+
+			
+				
+					
+				
+
+					
+				
+
+					
+				
+
+					
+				
+
+					
+				
+
+					
+				
+
+					
+				
+			
+		
+
+			
+				
+					
+				
+
+					
+				
+			
+		
+
+			
+				
+					
+				
+
+					
+				
+			
+		
+	
+//]]>
+</script>
+
+	<div id='board_stats'>		
+		<ul class='ipsType_small ipsList_inline'>
+			<li class='clear'>
+				<span class='value'>85 536</span>
+				Всего сообщений
+			</li>
+			<li class='clear'>
+				<span class='value'>712</span>
+				Пользователей
+			</li>
+			<li class='clear'>
+				<span class='value'>HanterX7</span>
+				Новый участник
+			</li>
+			<li class='clear' data-tooltip="20 сен 2024">
+				<span class='value'>950</span>
+				Рекорд посещаемости
+			</li>
+		</ul>
+	</div>
+
+<div id='board_statistics' class='statistics clearfix'>
+	<h4 class='statistics_head clearfix'><ul id='stat_links' class='ipsList_inline right ipsType_small'>
+		<!-- Hook point -->
+			<li><a href="http://pesway.pes6.ru/index.php?app=forums&amp;module=extras&amp;section=stats&amp;do=leaders" title="Посмотреть администраторов и модераторов форума">Администрация</a></li>
+			<li><a href="http://pesway.pes6.ru/index.php?app=forums&amp;module=extras&amp;section=stats" title="Посмотреть 20 самых активных пользователей за сегодня">Самые активные сегодня</a></li>
+			<li><a href="http://pesway.pes6.ru/index.php?app=members&amp;module=list&amp;max_results=20&amp;sort_key=posts&amp;sort_order=desc&amp;filter=ALL" title="Просмотреть 20 самых активных пользователей">Самые активные</a></li>
+            <li>
+                    <a href="http://pesway.pes6.ru/index.php/best-content/">
+                        
+                            Самый Популярный Контент
+                        
+                    </a>
+                </li>
+	</ul>
+Пользователей онлайн: 0 (за последние 15 минут)</h4>
+	<p class='statistics_brief desc'>
+		0 пользователей, 0 гостей, 0 анонимных
+		&nbsp;&nbsp;<a href='http://pesway.pes6.ru/index.php?app=members&amp;module=online&amp;sort_order=desc'>(Полный список)</a> 
+	</p>
+	
+	
+</div>
+				
+				<ol class='breadcrumb bottom ipsList_inline left clearfix clear'>
+					
+						<li>&nbsp;</li>
+					
+				</ol>
+                
+			</div>
+			<!-- shadowWrap -->
+			</div>
+
+            <div id='footer' class='clear'>
+            	</div>
+
+			<div id='stats_div'><div><img src='http://pesway.pes6.ru/index.php?s=2dbf7bc1831b4bf782326a54847ac7c7&amp;app=core&amp;module=task' alt='' style='border: 0px;height:1px;width:1px;' /></div></div>
+			
+				<script type="text/javascript">
+					ipb.global.lightBoxIsOff();
+				</script>
+			
+			<div id='inline_login_form' class='ipbfs_login' style="display:none">
+		<form action="http://pesway.pes6.ru/index.php?app=core&amp;module=global&amp;section=login&amp;do=process" method="post" id='login'>
+			<input type='hidden' name='auth_key' value='880ea6a14ea49e853634fbdc5015a024' />
+			<input type="hidden" name="referer" value="http://pesway.pes6.ru/" />
+			<h3>Войти</h3>
+			
+			
+            <div class='ipbfs_login_row'>
+
+                <div class='ipbfs_login_col'>
+                    <span class='right desc lighter blend_links'><a href="http://pesway.pes6.ru/index.php?app=core&amp;module=global&amp;section=register" title='Зарегистрируйтесь сейчас!'>Зарегистрируйтесь сейчас!</a></span>
+            		<strong><label for='ips_username'>Имя пользователя:</label></strong>
+                    <div class='ipsField_content'>
+                    	<input id='ips_username' type='text' class='input_text ipbfs_login_input ipbfs_luser' name='ips_username' placeholder="Имя пользователя:" size='30' tabindex='1' />
+                    </div>
+                </div>
+                
+                <div class='ipbfs_login_col'>
+                    <span class='right desc lighter blend_links'><a href='http://pesway.pes6.ru/index.php?app=core&amp;module=global&amp;section=lostpass' title='Запросить пароль'>Я забыл свой пароль</a></span>
+                    <strong><label for='ips_password'>Пароль</label></strong>
+                    <div class='ipsField_content'>
+                        <input id='ips_password' type='password' class='input_text ipbfs_login_input ipbfs_lpassword' name='ips_password' placeholder="Пароль" size='30' tabindex='2' /><br />
+                    </div>
+                </div>
+        
+            </div>
+            
+            <div class='clearfix'>
+        
+                <div class='ipbfs_login_col'>
+                    <input type='checkbox' id='inline_remember' checked='checked' name='rememberMe' value='1' class='input_check left' />
+                    <div style='padding-left: 20px;'>
+                        <label for='inline_remember'>
+                            <strong>Запомнить меня</strong>
+                            <span class='desc lighter' style='display: block; padding-top: 5px;'>Это не рекомендуется для публичных компьютеров</span>
+                        </label>
+                    </div>
+                </div>
+    
+                
+    
+            </div>
+            
+            <div class='ipsForm_submit ipsForm_center clear'>
+                <input type='submit' class='input_submit' value='Войти' />
+            </div>
+
+		</form>
+	</div>
+		</div>
+			
+
+<!-- ::: FOOTER (Change skin, language, mark as read, etc) ::: -->
+			<div id='footer_utilities' class='clearfix clear'>
+				 
+				<!-- Copyright Information -->
+        				  <p id='copyright'>
+        				  	<a href='http://www.invisionpower.com/apps/board/' title='Community Forum Software by Invision Power Services'>Community Forum Software by IP.Board</a></p>
+		<!-- / Copyright -->
+				<ul class='ipsList_inline left'>
+					<li>
+						<img src='http://pesway.pes6.ru/public/style_images/dash/feed.png' alt='RSS поток' id='rss_feed' class='clickable' />
+					</li>
+					
+						
+							<li>
+								<a rel="nofollow" id='new_skin' href='#'>Изменить стиль</a>			
+								<ul id='new_skin_menucontent' class='ipbmenu_content with_checks' style='display: none'>
+									
+										<li class='selected'>
+											<a href='#' data-clicklaunch='changeSkin' data-skinid='24'>Dashboard</a>
+										</li>
+									
+
+										<li >
+											<a href='#' data-clicklaunch='changeSkin' data-skinid='2'>IP.Board Mobile</a>
+										</li>
+									
+								</ul>
+							</li>
+						
+					
+						<li>
+							<a rel="nofollow" href='#' id='new_language'>Русский #2 (RU)</a>							
+							<ul id='new_language_menucontent' class='ipbmenu_content with_checks' style='display: none'>
+								
+									<li >
+										<a href="?k=880ea6a14ea49e853634fbdc5015a024&amp;setlanguage=1&amp;cal_id=&amp;langid=1">Русский (RU)</a>
+									</li>
+								
+
+									<li class='selected'>
+										<a href="?k=880ea6a14ea49e853634fbdc5015a024&amp;setlanguage=1&amp;cal_id=&amp;langid=2">Русский #2 (RU)</a>
+									</li>
+								
+							</ul>
+						</li>
+					
+					
+					
+					<li>
+						<a href="http://pesway.pes6.ru/index.php?app=core&amp;module=help" title='Перейти к помощи' rel="help" accesskey='6'>Помощь</a>
+					</li>
+					<li>
+						<a rel="nofollow" href='#top' title='Наверх'>Наверх</a>
+					</li>
+				</ul>
+			</div>
+			
+		
+	
+
+	
+
+        
+
+	</body>
+</html>
